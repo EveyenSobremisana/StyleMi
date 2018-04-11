@@ -8,24 +8,134 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
     <body>
-        <div id="firstpage" class="pagestyle">
-         
-           <img id="logo" src="imgs/logo.png"/>
+        <div id="pagewrap">
+
+      <div id="content">
+        <img src="SVG/logotext.svg" id="logotext"/>
+        <button id="next" class="btn"> NextPage</button>
+        <p id="AboutUs">About Us</p>
+        <p id="AboutApp">About App</p> 
+        <div id="aboutboxes">
+            <img src="SVG/aboutus.svg" id="aboutUsBox" class="aboutboxes"/>
+            <img src="SVG/aboutapp.svg" id="aboutAppBox" class="aboutboxes"/>
+        </div>
+          
+      </div>
+               
+
+    </div>
+    
+        <div id="firstpage">
+           <img id="logo" src="SVG/logo.svg"/>
            <div id="formbox">
-            <form>
-            NAME <input type="text" id="name" required="required"> <br/><br/>
-            GENDER <br/>
-                   &emsp;&emsp;&emsp;&emsp;<input type="radio" name="gender" id="female"> <span class="gender">Female</span><br/>
-                   &emsp;&emsp;&emsp;&emsp;<input type="radio" name="gender" id="male"> <span class="gender">Male</span>
-           </form>
+                
+                NAME <input type="text" id="name" maxlength="10" required="required" placeholder="5-10 characters" onfocus="this.placeholder = ''" onblur="this.placeholder='5-10 characters'"/> <br/><br/>
+                GENDER <br/>
+                       &emsp;&emsp;&emsp;&emsp;<input type="radio" name="gender" id="female"> <span class="gender">Female</span><br/>
+                       &emsp;&emsp;&emsp;&emsp;<input type="radio" name="gender" id="male"> <span class="gender">Male</span>
+        
             </div>
+            <img src="SVG/FillForm.svg" id="formnotifs"/>
             <button id="start" class="btn"> Start</button>
         </div>
+        <div id="secondpage">
         
-        <div id="secondpage" class="pagestyle">
-        <div id="screenname"> </div>
+        <div class="top">
+            <div id="nameDiv"></div>
+            <div id="setting">
+            <img src="SVG/settings.svg" class="settinglogo" id="settings1"/>
+            </div>
+       
+        </div>
+        <div class="bottom">
+            <img src="SVG/weatherhover.svg" id="hover1" class="choices1"/>
+            <img src="SVG/Stylehover.svg" id="hover2" class="choices1"/>
+            <img src="SVG/Closethover.svg" id="hover3" class="choices1"/>
+            <img src="SVG/Weather.svg" id="Weather" class="choices"/>
+            <img src="SVG/Style.svg" id="Style" class="choices"/>
+            <img src="SVG/Closet.svg" id="Closet" class="choices"/>
+            
         
         </div>
+        
+        
+        
+        </div>
+<div id="weatherpage">
+      <div class="top">
+                <div id="weathertitle"> What's the weather?</div>
+                <div id="setting">
+                <img src="SVG/settings.svg" class="settinglogo" id="settings2"/>
+                </div>
+       </div>
+        <div class="middle">
+             
+            <div id="box1">  
+                <img src="SVG/Sunny.svg" id="sunnyIcon" class="icons"/>
+                <img src="SVG/SunnyHover.svg" id="sunnyHover" class="iconsH"/>
+            </div>
+            
+            <div id="box2">
+                 <img src="SVG/Cloudy.svg" id="cloudyIcon" class="icons" />
+                <img src="SVG/CLoudyHover.svg" id="cloudyHover" class="iconsH"/>
+            </div>
+            
+            <div id="box3">
+            <img src="SVG/Rainy.svg" id="rainyIcon" class="icons"/>
+            <img src="SVG/RainyHover.svg" id="rainyHover" class="iconsH"/>
+            </div>
+            
+            <div id="box4">
+                <img src="SVG/Snowy.svg" id="snowyIcon" class="icons"/>
+                <img src="SVG/snowyHover.svg" id="snowyHover" class="iconsH"/>
+            </div>
+     
+        </div> 
+            
+        <div class="bottom">
+                <div class="backDiv">
+                    <img src="SVG/back.svg" id="goBack" class="go" /> </div>
+                    <div class="nextDiv">
+                    <img src="SVG/next.svg" id="goNext" class="go"/></div>
+                </div>
+</div>        
+        
+<div id="stylepage">
+      <div class="top">
+            <div id="styletitle"> Select your style:</div>
+            <div id="setting">
+            <img src="SVG/settings.svg" class="settinglogo" id="settings3"/>
+            </div>
+       </div>
+      <div class="middle">
+          <div id="box5">
+            <img src="SVG/Casual.svg" id="casualIcon" class="icons"/>
+            <img src="SVG/CasualHover.svg" id="casualHover" class="iconsH"/>
+          </div>
+          <div id="box6">
+            <img src="SVG/Business.svg" id="businessIcon" class="icons" />
+            <img src="SVG/BusinessHover.svg" id="businessHover" class="iconsH"/>
+          </div>
+          <div id="box7">
+            <img src="SVG/Fancy.svg" id="fancyIcon" class="icons"/>
+            <img src="SVG/FancyHover.svg" id="fancyHover" class="iconsH"/>
+          </div>
+        
+        
+        
+      </div> 
+            
+      <div class="bottom">
+        <div class="backDiv">
+        <img src="SVG/back.svg" id="goBack1" class="go" /> </div>
+        <div class="nextDiv">
+        <img src="SVG/next.svg" id="goNext1" class="go"/></div>
+    
+      </div>
+        
+        
+        
+</div>
     
     
         

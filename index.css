@@ -1,22 +1,146 @@
 body{
     margin: auto;
+    overflow: hidden;
 }
+
+/*landingpage*/
+#pagewrap {
+       width: 100vw;
+    height: 667px;
+    margin: 0 auto;
+/*  background-color: #E2DCDE;*/
+  }    
+#content{
+    
+        position: relative;
+        top: 10px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 550px;
+        height: 600px;
+        margin: auto; 
+      }
+p{
+            margin-top: 5%;
+            font-size: 2.5em;
+            text-align: center;
+            position: relative;
+            top: 300px;
+            font-family: 'Josefin Sans', sans-serif;
+   
+                
+        }
+p:hover{
+    cursor: pointer;
+}
+.aboutboxes{
+    width: 70%;
+    position: absolute;
+    left: 80px;
+    top: 250px;
+    display: none;
+}
+#logotext{
+            width:70%;
+            position: absolute;
+            left: 50px;
+        }
+.btn {
+width: 150px;
+background: #AA767c;
+border-radius: 28px;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 300;
+color: #ffffff;
+font-size: 1em;
+padding: 10px 20px 10px 20px;
+text-decoration: none;
+}
+.btn:hover {
+  background: #7d4f54;
+  text-decoration: none;
+}
+#next{
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+
+      /*MEDIA QUERIES*/
+      /* for 980px or less */
+      @media screen and (max-width: 667px) {
+
+        * { font-size: 1.0rem; }
+
+        #pagewrap {
+          width: 94%;
+        }
+        #content {
+          width: 65%;  
+        }
+        #next{
+              width: auto;
+          }
+        #aboutboxes{
+              width: auto;
+          }
+       
+      }
+
+      /* for 700px or less */
+      @media screen and (max-width: 667px) {
+        * { font-size: 1rem; }
+
+        #content {
+          width: auto;
+          float: none;
+     
+        }
+        #next{
+              width: auto;
+          }
+        #aboutboxes{
+              width: auto;
+          }
+}
+
+      /* for 480px or less */
+      @media screen and (max-width: 480px) and (min-width: 159px) {
+
+        * { font-size: 1rem; }
+       #content {
+          width: auto;
+        }
+       #logotext{
+              width: 80%;
+          }
+       #next{
+              width: auto;
+              font-size: 1.5rem;
+          }
+       .aboutboxes{
+              width: 90%;
+              left: 20px;
+              
+          }
+  }
+
+/*firstpage*/
 #firstpage {
-     position: relative;
-}
-.pagestyle{
      width: 375px;
     height: 667px;
-    background-color:#E2DCDE;
-   
-    
+    margin: 0 auto;
+    display: none;
+     position: relative;
+     background-color: #E2DCDE;
 }
 #logo {
-    width: 200px;
+    width: 300px;
     height: 200px;
     position: absolute;
     top:50px;
-    left: 90px;
+    left: 40px;
 }
 #formbox{
     position: absolute;
@@ -40,27 +164,239 @@ body{
     display: inline-block;
     font-size: .9em;
 }
-.btn {
-    width: 150px;
-  background: #AA767c;
-  border-radius: 28px;
-  font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-  color: #ffffff;
-  font-size: 1.6em;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+#formnotifs{
+    display: none;
+    width: 35%;
+    position: absolute;
+    bottom: 90px;
+    right: 50px;
 }
-.btn:hover {
-  background: #AA767B;
-  text-decoration: none;
-}
-
 #start{
     position: absolute;
     bottom: 50px;
     right: 40px;
 }
+.gender{
+    font-weight: 400;
+}
+
+/*Transition*/
+@keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeinfadeout {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+
+/*secondpage*/
 #secondpage{
+     width: 375px;
+    height: 667px;
+     margin: 0 auto;
+     display: none;
+     position: relative;
+}
+.top{
+    width: 100%;
+    height: 80px;
+    position:relative;
+    left: 0px;
+}
+#nameDiv{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+#setting{
+    width: 20%;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.settinglogo{
+    width: 50%;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.choices{
+    width: 20%;
+    position: absolute;  
+    margin-left: 20px;
+    bottom: 10px;
+}
+#Closet{ right: 20px;}
+#Style{ left: 130px;}
+.choices1{
+    width: 20%;
+    position: absolute;  
+    margin-left: 20px;
+    bottom: 90px;
     display: none;
 }
+#hover2{left: 130px;}
+#hover3{right: 20px;}
+.bottom{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+/*weatherpage*/
+#weatherpage{
+    width: 371px;
+    height: 663px;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+    border: 2px solid  #AA767c;
+}
+#weathertitle, #styletitle{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+.middle{
+    width: 80%;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    left: 35px;
+}
+#box1{
+  
+    width: 45%;
+    position: absolute;
+}
+#box2{
+    
+    width: 45%;
+    position: absolute;
+    right: 0px;
+}
+#box3{
+    
+    width: 45%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+#box4{
+   
+    width: 45%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.iconsH{
+    width: 70%;
+    display:none; 
+    
+}
+#sunnyHover{
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    
+}
+#cloudyHover{
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    
+}
+#rainyHover{
+    position: absolute;
+    bottom: 55px;
+    left: 20px;
+    
+}
+#snowyHover{
+    position: absolute;
+    bottom: 55px;
+    right: 20px;
+   
+}
+.go{
+    width: 80%;
+}
+.backDiv{
+    width: 30%;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.nextDiv{
+    width: 30%;
+    height: 40px;
+    
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+}
+
+/*stylepage*/
+#stylepage{
+     width: 371px;
+    height: 663px;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+    border: 2px solid  #AA767c;
+}
+#box5{
+    width: 45%;
+    position: absolute;}
+#box6{
+    width: 45%;
+    position: absolute;;
+    top: 0px;
+    right: 0px;
+}
+#box7{
+    width: 45%;
+    position: absolute;
+left: 80px;
+bottom: 0px;}
+
+#casualHover{
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+#businessHover{
+    position: absolute;
+    top: 55px;
+    right: 20px;
+}
+#fancyHover{
+    position: absolute;
+    bottom:55px;
+    left: 20px;
+}
+    
