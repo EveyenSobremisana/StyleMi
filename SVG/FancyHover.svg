@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.44 31.01"><defs><style>.cls-1{fill:#bdd4e7;stroke:#637074;stroke-miterlimit:10;stroke-width:1.74px;}.cls-2{font-size:17px;font-family:JosefinSans-Regular, Josefin Sans;letter-spacing:-0.05em;}.cls-3{letter-spacing:0em;}</style></defs><title>FancyHover</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_5" data-name="Layer 5"><g id="FancyHover"><rect class="cls-1" x="0.87" y="0.87" width="98.71" height="29.27" rx="14.64" ry="14.64"/><text class="cls-2" transform="translate(27.91 20.8)">F<tspan class="cls-3" x="9.09" y="0">ancy</tspan></text></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100.4 31" style="enable-background:new 0 0 100.4 31;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BDD4E7;stroke:#637074;stroke-width:1.74;stroke-miterlimit:10;}
+	.st1{enable-background:new    ;}
+</style>
+<title>FancyHover</title>
+<g id="Layer_2_1_">
+	<g id="Layer_5">
+		<g id="FancyHover">
+			<path class="st0" d="M15.5,0.9h69.4c8.1,0,14.6,6.6,14.6,14.6v0c0,8.1-6.6,14.6-14.6,14.6H15.5c-8.1,0-14.6-6.6-14.6-14.6v0
+				C0.9,7.4,7.4,0.9,15.5,0.9z"/>
+			<g class="st1">
+				<path d="M37,8.5v1.6h-5.6V14h4.9v1.6h-4.9v5.2h-1.6V8.5H37z"/>
+			</g>
+			<g class="st1">
+				<path d="M45.6,13.8v7H44v-1.2c-0.2,0.3-0.6,0.6-1.1,0.9c-0.5,0.3-1,0.4-1.6,0.4c-0.7,0-1.3-0.1-1.8-0.4c-0.5-0.3-1-0.7-1.3-1.3
+					c-0.3-0.6-0.5-1.2-0.5-2c0-0.8,0.2-1.4,0.5-2c0.3-0.6,0.8-1,1.3-1.3c0.5-0.3,1.2-0.5,1.8-0.5c0.6,0,1.1,0.1,1.6,0.4
+					c0.4,0.3,0.8,0.6,1.1,1l0.1-1.1H45.6z M43.2,19.2c0.4-0.3,0.7-0.8,0.8-1.3v-1.4c-0.1-0.5-0.4-0.9-0.9-1.2
+					c-0.4-0.3-0.9-0.5-1.5-0.5c-0.4,0-0.8,0.1-1.2,0.3s-0.6,0.5-0.8,0.9c-0.2,0.4-0.3,0.8-0.3,1.2c0,0.5,0.1,0.9,0.3,1.2
+					s0.5,0.7,0.9,0.9c0.4,0.2,0.8,0.3,1.2,0.3C42.3,19.7,42.8,19.5,43.2,19.2z"/>
+				<path d="M54.4,14.1c0.4,0.4,0.7,0.9,0.7,1.5v5.2h-1.6v-4.7c0-0.4-0.1-0.7-0.4-0.9c-0.2-0.2-0.5-0.3-1-0.4
+					c-0.6,0-1.1,0.2-1.5,0.7c-0.4,0.5-0.6,1.1-0.6,1.9v3.3h-1.6v-7h1.4l0.1,1.4c0.2-0.5,0.6-0.9,1.1-1.2c0.5-0.3,1.1-0.4,1.7-0.4
+					C53.4,13.5,53.9,13.7,54.4,14.1z"/>
+				<path d="M62.3,20.7C61.9,20.9,61.5,21,61,21c-0.8,0-1.4-0.2-2-0.5s-1-0.7-1.4-1.3c-0.3-0.6-0.5-1.2-0.5-1.9
+					c0-0.7,0.2-1.4,0.5-1.9c0.3-0.6,0.8-1,1.4-1.3c0.6-0.3,1.2-0.5,1.8-0.5c1.1,0,2,0.3,2.7,0.9l-0.8,1c-0.2-0.2-0.5-0.3-0.8-0.4
+					c-0.3-0.1-0.6-0.2-1-0.2c-0.4,0-0.8,0.1-1.1,0.3s-0.6,0.5-0.8,0.9c-0.2,0.4-0.3,0.8-0.3,1.2c0,0.4,0.1,0.8,0.3,1.2
+					c0.2,0.4,0.5,0.7,0.9,0.9c0.4,0.2,0.8,0.3,1.2,0.3c0.6,0,1.1-0.2,1.5-0.5l0.8,1C63.2,20.4,62.8,20.6,62.3,20.7z"/>
+				<path d="M72.2,13.8l-4.5,10.4h-1.6l1.6-3.6l-3.3-6.8h1.8l2.3,5l2.2-5H72.2z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

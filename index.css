@@ -11,14 +11,14 @@ body{
 /*  background-color: #E2DCDE;*/
   }    
 #content{
-    
+/*    background-color: antiquewhite;*/
         position: relative;
-        top: 10px;
+        top: 0px;
         left: 0px;
         right: 0px;
         bottom: 0px;
         width: 550px;
-        height: 600px;
+        height: 630px;
         margin: auto; 
       }
 p{
@@ -38,15 +38,17 @@ p:hover{
     width: 70%;
     position: absolute;
     left: 80px;
-    top: 250px;
+    top: 270px;
     display: none;
 }
 #logotext{
-            width:70%;
+            width:80%;
             position: absolute;
-            left: 50px;
+            top: 0px;
+            left: 100px;
         }
 .btn {
+    cursor: pointer;
 width: 150px;
 background: #AA767c;
 border-radius: 28px;
@@ -62,9 +64,40 @@ text-decoration: none;
   text-decoration: none;
 }
 #next{
+    width: 170px;
+    height: 40px;
     position: absolute;
     bottom: 5px;
     right: 20px;
+}
+#helpBut{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 5px;
+    right: 195px;
+}
+#helpDiv{
+    display: none;
+    padding: 15px;
+    width: 80%;
+    height:500px;
+    background-color: rgba(189,212,231,0.9);
+    position: absolute;
+    left:40px;
+    top: 40px;
+}
+#helpTitle{
+font-family: 'Josefin Sans', sans-serif;
+color: black;
+font-size: 2em;
+    text-align: center;
+}
+#helpSteps{
+font-family: 'Josefin Sans', sans-serif;
+color: black;
+font-size: 1.2em;
 }
 
       /*MEDIA QUERIES*/
@@ -72,15 +105,26 @@ text-decoration: none;
       @media screen and (max-width: 667px) {
 
         * { font-size: 1.0rem; }
-
-        #pagewrap {
+        #logotext{
+            top: 0px;
+            left: 60px;
+            width: 80%;
+          }
+       
+          #pagewrap {
           width: 94%;
         }
         #content {
           width: 65%;  
         }
         #next{
-              width: auto;
+              width:170px;
+            height: 40px;
+              font-size: 1.5rem;
+          }
+          #helpBut{
+              bottom: 9px;
+              right: 220px; 
           }
         #aboutboxes{
               width: auto;
@@ -88,42 +132,62 @@ text-decoration: none;
        
       }
 
-      /* for 700px or less */
-      @media screen and (max-width: 667px) {
-        * { font-size: 1rem; }
-
-        #content {
+      /* for 666px or less */
+      @media screen and (max-width: 666px) and (min-width:476px){
+         #logotext{
+              top: 0px;
+             left: 60px;
+              width: 80%;
+          }
+        
+          #content {
           width: auto;
           float: none;
      
         }
         #next{
-              width: auto;
+              width:170px;
+              height: 40px;
+              font-size: 1rem;
           }
         #aboutboxes{
               width: auto;
           }
+          #helpBut{
+              bottom: 5px;
+              right: 210px; 
+          }
 }
 
-      /* for 480px or less */
-      @media screen and (max-width: 480px) and (min-width: 159px) {
+      /* for 475px or less */
+      @media screen and (max-width: 475px) and (min-width: 100px) {
 
-        * { font-size: 1rem; }
+        
        #content {
           width: auto;
         }
        #logotext{
-              width: 80%;
+           top: 30px;
+           left: 30px;
+            width: 90%;
           }
        #next{
-              width: auto;
-              font-size: 1.5rem;
+           width:130px;
+              font-size:.9rem;
+          }
+        #helpBut{
+              bottom: 5px;
+              right: 155px; 
           }
        .aboutboxes{
               width: 90%;
               left: 20px;
               
           }
+    #helpDiv{
+    left:22px;
+}
+          
   }
 
 /*firstpage*/

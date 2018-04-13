@@ -1,3 +1,14 @@
+var helpBut = document.getElementById("helpBut"),
+    helpDiv= document.getElementById("helpDiv");
+
+helpBut.addEventListener("click",function(){
+if (helpDiv.style.display === "none") {
+        helpDiv.style.display = "block";
+    } else {
+        helpDiv.style.display = "none";
+    }
+})
+
 var weatherH = document.getElementById("hover1"),
     styleH = document.getElementById("hover2"),
     closetH = document.getElementById("hover3");
@@ -39,11 +50,11 @@ var sunnyH = document.getElementById("sunnyHover"),
     box3 = document.getElementById("box3"),
     box4 = document.getElementById("box4");
 
-var clickedWeather=" ";
+var clickedWeather=null;
 
 //Weatherpage  logos and hover state
         box1.addEventListener("click",function(){
-            clickedWeather = box1; 
+//            clickedWeather = box1; 
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             stylepage.style.display="block";
@@ -130,17 +141,18 @@ var clickedWeather=" ";
     businessIcon = document.getElementById("businessIcon"),
     box5 = document.getElementById("box5"),
     box6 = document.getElementById("box6"),
-    box7 = document.getElementById("box7");
+    box7 = document.getElementById("box7"),
+    dressingpage = document.getElementById("dressingpage");
     
-var clickedStyle=" ";
+var clickedStyle= null;
 
 //StylePage
         box5.addEventListener("click",function(){
             clickedStyle = box5; 
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
-            document.getElementById("dressingpage").style.display="block";
-            document.getElementById("dressingpage").style.animation = "fadein 1.5s";
+            dressingpage.style.display="block";
+            dressingpage.style.animation = "fadein 1.5s";
 
         });
         box5.addEventListener("mouseenter",function(){
@@ -200,7 +212,7 @@ var clickedStyle=" ";
 var chgShoes = document.getElementById("changeShoes");
 
 function changeShoes(){
-    if (gender == "female"){
+    if (female.checked){
         if (clickedWeather == "box1"){
         chgShoes.style.backgroundImage = "url(SVG/outfits/gs1.svg)";
         }else if(clickedWeather == "box2"){

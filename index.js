@@ -32,7 +32,6 @@ gender =" ";
         document.getElementById("start").addEventListener("click",function(){
             console.log (female.checked, male.checked);
             if(female.checked){
-                gender = female;
             firstpage.style.display="none";
             firstpage.style.animation = "fadeout 1.5s";
             secondpage.style.display="block";
@@ -111,29 +110,39 @@ var weatherBut = document.getElementById("Weather"),
             secondpage.style.animation = "fadein 1.5s";
 
         });
-        document.getElementById("goNext").addEventListener("click",function(){
-            weatherpage.style.display="none";
-            weatherpage.style.animation = "fadeout 1.5s";
-            stylepage.style.display="block";
-            stylepage.style.animation = "fadein 1.5s";
-            
-
-        });
-
-        document.getElementById("goBack1").addEventListener("click",function(){
+             document.getElementById("goBack1").addEventListener("click",function(){
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             weatherpage.style.display="block";
             weatherpage.style.animation = "fadein 1.5s";
 
-        });
-        document.getElementById("goNext1").addEventListener("click",function(){
-            stylepage.style.display="none";
-            stylepage.style.animation = "fadeout 1.5s";
-            document.getElementById("dressingpage").style.display="block";
-            document.getElementById("dressingpage").style.animation = "fadein 1.5s";
+        });     
+            document.getElementById("goBack2").addEventListener("click",function(){
+            dressingpage.style.display="none";
+            dressingpage.style.animation = "fadeout 1.5s";
+            stylepage.style.display="block";
+            stylepage.style.animation = "fadein 1.5s";
 
         });
+
+
+//        document.getElementById("goNext").addEventListener("click",function(){
+//            weatherpage.style.display="none";
+//            weatherpage.style.animation = "fadeout 1.5s";
+//            stylepage.style.display="block";
+//            stylepage.style.animation = "fadein 1.5s";
+//            
+//
+//        });
+
+
+//        document.getElementById("goNext1").addEventListener("click",function(){
+//            stylepage.style.display="none";
+//            stylepage.style.animation = "fadeout 1.5s";
+//            document.getElementById("dressingpage").style.display="block";
+//            document.getElementById("dressingpage").style.animation = "fadein 1.5s";
+//
+//        });
 
 
 
