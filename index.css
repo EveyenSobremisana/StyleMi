@@ -5,7 +5,7 @@ body{
 
 /*landingpage*/
 #pagewrap {
-       width: 100vw;
+    width: 100vw;
     height: 667px;
     margin: 0 auto;
 /*  background-color: #E2DCDE;*/
@@ -399,4 +399,76 @@ bottom: 0px;}
     bottom:55px;
     left: 20px;
 }
-    
+
+/*Dressing Page*/
+#dressingpage{
+   
+     width: 371px;
+    height: 663px;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+}
+#addCloset{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+#reset{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#middle{
+
+    width: 90%;
+    height: 340px;
+    position: relative;
+    top: 130px;
+    left: 19px;
+}
+.change{
+    width: 10%;
+    position: absolute;
+}
+#changeShirtRight{
+    right: 0px;
+}
+#changePantsLeft{
+    top: 150px;
+}
+#changePantsRight{
+    right: 0px;
+    top: 150px;
+}
+#facts1{
+    background-color:#7d4f54;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+}
+#facts2{
+    background-color:#7d4f54;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    right:0px; 
+}
+#facts3{
+    background-color: #7d4f54;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+}
+#changeShoes{
+    position: absolute;
+    background-color: #7d4f54;
+    width: 100px;
+    height: 100px;
+    bottom: -10px;
+    left: 120px;
+}

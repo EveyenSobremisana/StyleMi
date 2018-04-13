@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="index.css" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
     <body>
         <div id="pagewrap">
 
       <div id="content">
         <img src="SVG/logotext.svg" id="logotext"/>
-        <button id="next" class="btn"> NextPage</button>
+        <button id="next" class="btn"> Begin</button>
         <p id="AboutUs">About Us</p>
         <p id="AboutApp">About App</p> 
         <div id="aboutboxes">
@@ -38,6 +38,7 @@
             <img src="SVG/FillForm.svg" id="formnotifs"/>
             <button id="start" class="btn"> Start</button>
         </div>
+        
         <div id="secondpage">
         
         <div class="top">
@@ -61,7 +62,8 @@
         
         
         </div>
-<div id="weatherpage">
+        
+        <div id="weatherpage">
       <div class="top">
                 <div id="weathertitle"> What's the weather?</div>
                 <div id="setting">
@@ -100,7 +102,7 @@
                 </div>
 </div>        
         
-<div id="stylepage">
+        <div id="stylepage">
       <div class="top">
             <div id="styletitle"> Select your style:</div>
             <div id="setting">
@@ -136,15 +138,49 @@
         
         
 </div>
+        
+        <div id="dressingpage">
+            <div class="top">
+                <button id="addCloset" class="btn"> Add to Closet</button>
+                <button id="reset" class="btn"> Reset</button>
+            </div>
+            <div id="facts1"></div>
+            <div id="facts2"></div> 
+            <div id="facts3"></div>
+            
+            <div id="middle">
+                <img src="SVG/changeleft.svg" class="change" id="changeShirtLeft">
+                
+                <img src="SVG/changeright.svg" class="change" id="changeShirtRight"> 
+                
+                
+                <img src="SVG/changeleft.svg" class="change" id="changePantsLeft">
+                <img src="SVG/changeright.svg" class="change" id="changePantsRight">   
+                
+                
+                
+                <div id="changeShoes"></div>
+               
+                
+                
+            
+            
+            </div>
+            <div class="bottom">
+        <div class="backDiv">
+        <img src="SVG/back.svg" id="goBack2" class="go" /> </div>
+        
     
+      </div>
+        
+        
+        
+        
+        </div>
     
-        
-        
-    
-        
-        
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
+        <script src="display.js"></script>
     </body>
 </html>
