@@ -50,11 +50,15 @@ var sunnyH = document.getElementById("sunnyHover"),
     box3 = document.getElementById("box3"),
     box4 = document.getElementById("box4");
 
-var clickedWeather=null;
+var CurrWeather = [ ];
+
+
 
 //Weatherpage  logos and hover state
         box1.addEventListener("click",function(){
-//            clickedWeather = box1; 
+            
+            CurrWeather.push="sunny";
+            
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             stylepage.style.display="block";
@@ -73,7 +77,9 @@ var clickedWeather=null;
         });  
        
         box2.addEventListener("click",function(){
-            clickedWeather = box2; 
+            
+            CurrWeather.push="cloudy";
+            
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             stylepage.style.display="block";
@@ -94,7 +100,9 @@ var clickedWeather=null;
 });
 
         box3.addEventListener("click",function(){
-            clickedWeather = box3; 
+            
+            CurrWeather.push="rainy";
+            
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             stylepage.style.display="block";
@@ -114,7 +122,9 @@ var clickedWeather=null;
 });
 
         box4.addEventListener("click",function(){
-            clickedWeather = box4; 
+            
+            CurrWeather.push="snowy";
+            
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             stylepage.style.display="block";
@@ -143,17 +153,22 @@ var clickedWeather=null;
     box6 = document.getElementById("box6"),
     box7 = document.getElementById("box7"),
     dressingpage = document.getElementById("dressingpage");
+
+var CurrStyle = [ ];
     
-var clickedStyle= null;
+
 
 //StylePage
         box5.addEventListener("click",function(){
-            clickedStyle = box5; 
+            
+            CurrStyle.push = "casual";
+            
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             dressingpage.style.display="block";
             dressingpage.style.animation = "fadein 1.5s";
-
+            StyleMi();
+                      
         });
         box5.addEventListener("mouseenter",function(){
             casualIcon.style.opacity = 0.6;
@@ -168,11 +183,14 @@ var clickedStyle= null;
         
 
         box6.addEventListener("click",function(){
-            clickedStyle = box5; 
+            
+            CurrStyle.push = "business";
+            
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             document.getElementById("dressingpage").style.display="block";
             document.getElementById("dressingpage").style.animation = "fadein 1.5s";
+            StyleMi();
 
         });
         box6.addEventListener("mouseenter",function(){
@@ -188,14 +206,14 @@ var clickedStyle= null;
 
 
         box7.addEventListener("click",function(){
-            clickedStyle = box5; 
+            
+            CurrStyle.push = "fancy";
+            
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             document.getElementById("dressingpage").style.display="block";
             document.getElementById("dressingpage").style.animation = "fadein 1.5s";
-            alert(gender);
-            alert(clickedWeather);
-            alert(clickedStyle);
+            StyleMi();
         });
         box7.addEventListener("mouseenter",function(){
             fancyIcon.style.opacity = 0.6;
@@ -209,23 +227,16 @@ var clickedStyle= null;
         });
 
 
-var chgShoes = document.getElementById("changeShoes");
+/****************FUNCTION*******************/
 
-function changeShoes(){
-    if (female.checked){
-        if (clickedWeather == "box1"){
-        chgShoes.style.backgroundImage = "url(SVG/outfits/gs1.svg)";
-        }else if(clickedWeather == "box2"){
-            chgShoes.style.backgroundImage = "url(SVG/outfits/gs2.svg)";
-        }
-    }else if (gender == "male"){
-        if (clickedWeather == "box1"){
-        chgShoes.innerHTML = "<img src='SVG/outfits/bs1.svg/>'"; 
-        }
+function StyleMi() {
+   
+    for (i = 0; i <gender.length; i++){
+    if (gender[i] == "femaleGen"){
+        alert(gender,CurrStyle,CurrWeather);
+        
+    } else if ( gender [i] == "maleGen"){
+        alert("male");
     }
-    
 }
-
-
-
-    
+}

@@ -20,8 +20,9 @@ var landingpage = document.getElementById("pagewrap"),
     male = document.getElementById("male"),
     formNotifs = document.getElementById("formnotifs"),
     secondpage = document.getElementById("secondpage");
+var gender = [ ];
 
-gender =" ";
+
 //Moving to the next page//
         document.getElementById("next").addEventListener("click",function(){
             landingpage.style.display="none";
@@ -32,6 +33,7 @@ gender =" ";
         document.getElementById("start").addEventListener("click",function(){
             console.log (female.checked, male.checked);
             if(female.checked){
+            gender.push("femaleGen");
             firstpage.style.display="none";
             firstpage.style.animation = "fadeout 1.5s";
             secondpage.style.display="block";
@@ -40,9 +42,10 @@ gender =" ";
             nameDiv.innerHTML = document.getElementById("name").value;
 
             secondpage.style.backgroundImage = "url(SVG/bg1.svg)";
-                formNotifs.style.display="none";
+            formNotifs.style.display="none";
+            console.log(gender);
             }else if(male.checked){
-                gender = male;
+              gender.push("maleGen");
             firstpage.style.display="none";
             firstpage.style.animation = "fadeout 1.5s";
             secondpage.style.display="block";
@@ -51,6 +54,7 @@ gender =" ";
             nameDiv.innerHTML = document.getElementById("name").value;
                 secondpage.style.backgroundImage = "url(SVG/bg2.svg)";
                 formNotifs.style.display="none";
+                console.log(gender);
             }else {
                 formNotifs.style.display="block";
                 formNotifs.style.animation = "fadeinfadeout";
@@ -83,25 +87,28 @@ var weatherBut = document.getElementById("Weather"),
             secondpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
             firstpage.style.animation = "fadein 1.5s";
+            gender= [ ];
         });
         document.getElementById("settings2").addEventListener("click",function(){
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
             firstpage.style.animation = "fadein 1.5s";
+            gender= [ ];
         });
         document.getElementById("settings3").addEventListener("click",function(){
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
             firstpage.style.animation = "fadein 1.5s";
+            gender= [ ];
         });
 
 
 
 
 
-// BACK AND NEXT BUTTON 
+// BACK BUTTON 
 
         document.getElementById("goBack").addEventListener("click",function(){
             weatherpage.style.display="none";
@@ -126,23 +133,7 @@ var weatherBut = document.getElementById("Weather"),
         });
 
 
-//        document.getElementById("goNext").addEventListener("click",function(){
-//            weatherpage.style.display="none";
-//            weatherpage.style.animation = "fadeout 1.5s";
-//            stylepage.style.display="block";
-//            stylepage.style.animation = "fadein 1.5s";
-//            
-//
-//        });
-
-
-//        document.getElementById("goNext1").addEventListener("click",function(){
-//            stylepage.style.display="none";
-//            stylepage.style.animation = "fadeout 1.5s";
-//            document.getElementById("dressingpage").style.display="block";
-//            document.getElementById("dressingpage").style.animation = "fadein 1.5s";
-//
-//        });
+/*************************************************************/
 
 
 
