@@ -9,17 +9,9 @@ if (helpDiv.style.display === "none") {
     }
 })
 
-var weatherH = document.getElementById("hover1"),
-    styleH = document.getElementById("hover2"),
-    closetH = document.getElementById("hover3");
+var  styleH = document.getElementById("hover1"),
+    closetH = document.getElementById("hover2");
 
-        //weatherbutton
-        weatherBut.addEventListener("mouseenter",function(){
-            weatherH.style.display = "block";
-        });
-        weatherBut.addEventListener("mouseleave",function(){
-            weatherH.style.display = "none";
-        });
         //stylebutton
         styleBut.addEventListener("mouseenter",function(){
             styleH.style.display = "block";
@@ -57,7 +49,7 @@ var CurrWeather = [ ];
 //Weatherpage  logos and hover state
         box1.addEventListener("click",function(){
             
-            CurrWeather.push="sunny";
+            CurrWeather.push("sunny");
             
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
@@ -65,6 +57,7 @@ var CurrWeather = [ ];
             stylepage.style.animation = "fadein 1.5s";
             
            document.getElementById("dressingpage").style.backgroundImage = secondpage.style.backgroundImage; 
+            console.log(CurrWeather);
         });
         box1.addEventListener("mouseenter",function(){
             sunnyIcon.style.opacity = 0.6;
@@ -78,7 +71,7 @@ var CurrWeather = [ ];
        
         box2.addEventListener("click",function(){
             
-            CurrWeather.push="cloudy";
+            CurrWeather.push("cloudy");
             
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
@@ -87,6 +80,7 @@ var CurrWeather = [ ];
             
             
             document.getElementById("dressingpage").style.backgroundImage = secondpage.style.backgroundImage;
+            console.log(CurrWeather);
         });
         box2.addEventListener("mouseenter",function(){
             cloudyIcon.style.opacity = 0.6;
@@ -101,7 +95,7 @@ var CurrWeather = [ ];
 
         box3.addEventListener("click",function(){
             
-            CurrWeather.push="rainy";
+            CurrWeather.push("rainy");
             
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
@@ -109,6 +103,7 @@ var CurrWeather = [ ];
             stylepage.style.animation = "fadein 1.5s";
             
             document.getElementById("dressingpage").style.backgroundImage = secondpage.style.backgroundImage;
+            console.log(CurrWeather);
         });
         box3.addEventListener("mouseenter",function(){
             rainyIcon.style.opacity = 0.6;
@@ -123,7 +118,7 @@ var CurrWeather = [ ];
 
         box4.addEventListener("click",function(){
             
-            CurrWeather.push="snowy";
+            CurrWeather.push("snowy");
             
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
@@ -131,6 +126,7 @@ var CurrWeather = [ ];
             stylepage.style.animation = "fadein 1.5s";
             
             document.getElementById("dressingpage").style.backgroundImage = secondpage.style.backgroundImage;
+            console.log(CurrWeather);
         });        
         box4.addEventListener("mouseenter",function(){
             snowyIcon.style.opacity = 0.6;
@@ -161,12 +157,13 @@ var CurrStyle = [ ];
 //StylePage
         box5.addEventListener("click",function(){
             
-            CurrStyle.push = "casual";
+            CurrStyle.push("casual");
             
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             dressingpage.style.display="block";
             dressingpage.style.animation = "fadein 1.5s";
+            console.log(CurrStyle);
             StyleMi();
                       
         });
@@ -184,12 +181,13 @@ var CurrStyle = [ ];
 
         box6.addEventListener("click",function(){
             
-            CurrStyle.push = "business";
+            CurrStyle.push("business");
             
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             document.getElementById("dressingpage").style.display="block";
             document.getElementById("dressingpage").style.animation = "fadein 1.5s";
+            console.log(CurrStyle);
             StyleMi();
 
         });
@@ -207,12 +205,13 @@ var CurrStyle = [ ];
 
         box7.addEventListener("click",function(){
             
-            CurrStyle.push = "fancy";
+            CurrStyle.push("fancy") ;
             
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             document.getElementById("dressingpage").style.display="block";
             document.getElementById("dressingpage").style.animation = "fadein 1.5s";
+            console.log(CurrStyle);
             StyleMi();
         });
         box7.addEventListener("mouseenter",function(){
@@ -229,14 +228,76 @@ var CurrStyle = [ ];
 
 /****************FUNCTION*******************/
 
+var dress = document.getElementById("dress");
 function StyleMi() {
    
     for (i = 0; i <gender.length; i++){
     if (gender[i] == "femaleGen"){
-        alert(gender,CurrStyle,CurrWeather);
-        
+//        sunny
+       if(CurrWeather[i]== "sunny"){
+           if(CurrStyle[i] == "casual"){
+               dress.style.backgroundImage= "url(SVG/outfits/female/scg.svg)";
+           }else if (CurrStyle[i] == "business"){
+               dress.style.backgroundImage= "url(SVG/outfits/female/sbg.svg)";
+           }else if (CurrStyle[i] == "fancy"){
+               dress.style.backgroundImage= "url(SVG/outfits/female/sfg.svg)";
+           }
+          
+       }else if(CurrWeather[i] == "cloudy"){
+           if(CurrStyle[i] == "casual"){
+               dress.style.backgroundImage= "url(SVG/outfits/female/ccg.svg)";
+           }else if (CurrStyle[i] == "business"){
+               dress.style.backgroundImage= "url(SVG/outfits/female/cbg.svg)";
+           }else if (CurrStyle[i] == "fancy"){
+               dress.style.backgroundImage= "url(SVG/outfits/female/cfg.svg)";
+           }
+       }else if (CurrWeather[i]== "rainy"){
+           if(CurrStyle[i] == "casual"){
+              dress.style.backgroundImage= "url(SVG/outfits/female/rcg.svg)";
+           }else if (CurrStyle[i] == "business"){
+               dress.style.backgroundImage= "url(SVG/outfits/female/rbg.svg)";
+           }else if (CurrStyle[i] == "fancy"){
+               dress.style.backgroundImage= "url(SVG/outfits/female/rfg.svg)";
+           }
+       }else if(CurrWeather[i] == "snowy"){
+             if(CurrStyle[i] == "casual"){
+               dress.style.backgroundImage= "url(SVG/outfits/female/sncg.svg)";
+           }else if (CurrStyle[i] == "business"){
+               dress.style.backgroundImage= "url(SVG/outfits/female/snbg.svg)";
+           }else if (CurrStyle[i] == "fancy"){
+               dress.style.backgroundImage= "url(SVG/outfits/female/snfg.svg)";
+           }
+       }
+
     } else if ( gender [i] == "maleGen"){
-        alert("male");
+         currentweather();
     }
 }
 }
+
+//function currentweather (){
+//           for (x = 0; x < CurrWeather.length; x++){
+//           if(CurrWeather[i] == "sunny"){
+//               alert(gender, CurrWeather);
+//           }else if (CurrWeather[i] == "cloudy"){
+//                alert(gender, CurrWeather);
+//           }else if ( CurrWeather[i] == "rainy"){
+//                alert(gender, CurrWeather);
+//           }else if (CurrWeather[i]== "snowy"){
+//                alert(gender, CurrWeather);
+//           }
+//       }
+//        
+//}
+//
+//function currentstyle (){
+//    for (y =0; y < CurrStyle.length; y++){
+//        if(CurrStyle[i] == "casual"){
+//            alert("casual");
+//        }else if ( CurrStyle[i] == "business"){
+//            alert("business");
+//        }else if(CurrStyle[i] == "fancy"){
+//            alert("fancy");
+//        }
+//    }
+//}
