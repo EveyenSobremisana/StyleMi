@@ -64,13 +64,20 @@ var gender = [ ];
 var styleBut = document.getElementById("Style"),
     closetBut = document.getElementById("Closet"), 
     stylepage= document.getElementById("stylepage"),
-    weatherpage = document.getElementById("weatherpage");
+    closetpage = document.getElementById("closetpage");
     
         styleBut.addEventListener("click",function(){
             secondpage.style.display="none";
             secondpage.style.animation = "fadeout 1.5s";
             weatherpage.style.display="block";
             weatherpage.style.animation = "fadein 1.5s";
+        });
+
+        closetBut.addEventListener("click",function(){
+            secondpage.style.display="none";
+            secondpage.style.animation = "fadeout 1.5s";
+            closetpage.style.display="block";
+            closetpage.style.animation = "fadein 1.5s";
         });
 
 
@@ -152,8 +159,8 @@ var styleBut = document.getElementById("Style"),
             document.getElementById("goBack3").addEventListener("click",function(){
             CurrWeather= [ ];
             CurrStyle = [ ];
-            document.getElementById("closetpage").style.display="none";
-            document.getElementById("closetpage").style.animation = "fadeout 1.5s";
+            closetpage.style.display="none";
+            closetpage.style.animation = "fadeout 1.5s";
             dressingpage.style.display="block";
             dressingpage.style.animation = "fadein 1.5s";
             
@@ -166,8 +173,8 @@ var styleBut = document.getElementById("Style"),
             CurrStyle = [ ];
                 dressingpage.style.display="none";
             dressingpage.style.animation = "fadeout 1.5s";
-            document.getElementById("closetpage").style.display="block";
-            document.getElementById("closetpage").style.animation = "fadein 1.5s";
+            closetpage.style.display="block";
+            closetpage.style.animation = "fadein 1.5s";
             });
             
            
