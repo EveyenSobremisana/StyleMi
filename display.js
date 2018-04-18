@@ -588,12 +588,19 @@ function saveClothes (){
     box ++;
     var Cdiv = document.createElement("div");
       Cdiv.className="saved";
-    
+      Cdiv.id = box;
     newImage = document.createElement("div");
     newImage.className="imgsaved"
     newImage.style.backgroundImage = dressSaved;
 //    Cdiv.appendChild(dressSaved);
   
+    function CdivDel(id){
+        document.getElementById(id).remove();
+    }
+    Cdiv.addEventListener("click", function(){
+        CdivDel(Cdiv.id)
+    })
+    
     Cdiv.appendChild(newImage);
     display.appendChild(Cdiv);
 
