@@ -416,8 +416,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/scb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/bscU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/bscD.svg)";
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/bscU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/bscD.svg)";
             }
             else if (CurrStyle[i] == "business"){
                    dress.style.backgroundImage= "url(SVG/outfits/male/sbb.svg)";
@@ -429,8 +429,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/sbb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/bsbU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/bsbD.svg)";
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/bsbU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/bsbD.svg)";
             }
             else if (CurrStyle[i] == "fancy"){
                    dress.style.backgroundImage= "url(SVG/outfits/male/sfb.svg)";
@@ -442,8 +442,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/sfb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/bsfU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/bsfD.svg)";
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/bsfU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/bsfD.svg)";
                }
     
         }
@@ -459,8 +459,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/ccb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/bccU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/bccD.svg)";
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/bccU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/bccD.svg)";
             }
             else if (CurrStyle[i] == "business"){
                    dress.style.backgroundImage= "url(SVG/outfits/male/cbb.svg)";
@@ -472,8 +472,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/cbb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/bcbU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/bcbD.svg)";
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/bcbU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/bcbD.svg)";
             }
             else if (CurrStyle[i] == "fancy"){
                    dress.style.backgroundImage= "url(SVG/outfits/male/cfb.svg)";
@@ -485,8 +485,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/cfb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/bcfU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/bcfD.svg)";
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/bcfU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/bcfD.svg)";
                }
             
        }
@@ -501,8 +501,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/rcb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/brcU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/brcD.svg)";    
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/brcU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/brcD.svg)";    
                }
                else if (CurrStyle[i] == "business"){
                    dress.style.backgroundImage= "url(SVG/outfits/male/rbb.svg)";
@@ -514,8 +514,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/rbb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/brbU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/brbD.svg)";
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/brbU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/brbD.svg)";
                }
                else if (CurrStyle[i] == "fancy"){
                    dress.style.backgroundImage= "url(SVG/outfits/male/rfb.svg)";
@@ -527,8 +527,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/rfb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/brfU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/brfD.svg)";
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/brfU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/brfD.svg)";
                }
            
        }
@@ -543,8 +543,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/sncb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/bsncU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/bsncD.svg)";
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/bsncU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/bsncD.svg)";
                }
                else if (CurrStyle[i] == "business"){
                    dress.style.backgroundImage= "url(SVG/outfits/male/snbb.svg)";
@@ -556,8 +556,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/snbb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/bsnbU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/bsnbD.svg)";
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/bsnbU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/bsnbD.svg)";
                }
                else if (CurrStyle[i] == "fancy"){
                    dress.style.backgroundImage= "url(SVG/outfits/male/snfb.svg)";
@@ -569,8 +569,8 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/snfb.svg)";});
                    
                    //putting the facts in the placeholder
-                    document.getElementById("facts1").style.backgroundImage = "url(SVG/facts/bsnfU.svg)";
-                    document.getElementById("facts4").style.backgroundImage = "url(SVG/facts/bsnfD.svg)";
+                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/bsnfU.svg)";
+                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/bsnfD.svg)";
                }
            }
     }

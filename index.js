@@ -40,9 +40,12 @@ var gender = [ ];
             secondpage.style.animation = "fadein 1.5s";
 
             nameDiv.innerHTML = document.getElementById("name").value;
-
             secondpage.style.backgroundImage = "url(SVG/bg1.svg)";
             formNotifs.style.display="none";
+            document.getElementById("fact2").style.display ="none";
+            document.getElementById("fact3").style.display ="none";
+            document.getElementById("fact1").style.display ="block";
+            document.getElementById("fact4").style.display ="block";
             console.log(gender);
             }else if(male.checked){
               gender.push("maleGen");
@@ -53,7 +56,10 @@ var gender = [ ];
 
             nameDiv.innerHTML = document.getElementById("name").value;
                 secondpage.style.backgroundImage = "url(SVG/bg2.svg)";
-                formNotifs.style.display="none";
+                formNotifs.style.display="none";document.getElementById("fact2").style.display ="none";
+            document.getElementById("fact3").style.display ="none";
+            document.getElementById("fact1").style.display ="block";
+            document.getElementById("fact4").style.display ="block";
                 console.log(gender);
             }else {
                 formNotifs.style.display="block";

@@ -466,7 +466,7 @@ bottom: 0px;}
 /*Dressing Page*/
 #dressingpage{
    
-     width: 371px;
+    width: 371px;
     height: 663px;
     margin: 0 auto;
     display: none;
@@ -513,20 +513,20 @@ bottom: 0px;}
     left: 10px;
 }
 #facts2{
-    background-color:#7d4f54;
-    width: 150px;
-    height: 100px;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 124px;
     position: absolute;
-    top: 60px;
-    right:0px; 
+    top: 65px;
+    right:10px; 
 }
 #facts3{
-    background-color: #7d4f54;
-    width: 150px;
-    height: 100px;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 124px;
     position: absolute;
     bottom: 150px;
-    left: 0px;
+    left: 10px;
 }
 #facts4{
     background-repeat: no-repeat;
