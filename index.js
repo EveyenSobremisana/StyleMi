@@ -74,8 +74,12 @@ var styleBut = document.getElementById("Style"),
         });
 
         closetBut.addEventListener("click",function(){
+            
             secondpage.style.display="none";
             secondpage.style.animation = "fadeout 1.5s";
+            
+            myOutfits = localStorage.getItem("myOutfits");
+            
             closetpage.style.display="block";
             closetpage.style.animation = "fadein 1.5s";
         });
