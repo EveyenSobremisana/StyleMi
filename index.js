@@ -62,6 +62,7 @@ var gender = [ ];
 
 var styleBut = document.getElementById("Style"),
     closetBut = document.getElementById("Closet"), 
+    closetB = document.getElementById("hidecloset"), 
     stylepage= document.getElementById("stylepage"),
     closetpage = document.getElementById("closetpage");
     
@@ -71,17 +72,22 @@ var styleBut = document.getElementById("Style"),
             weatherpage.style.display="block";
             weatherpage.style.animation = "fadein 1.5s";
         });
-
+        closetB.addEventListener("click",function(){ {
+             document.getElementById("closetnotifs").style.display = "block";
+    }
         closetBut.addEventListener("click",function(){
             
             secondpage.style.display="none";
             secondpage.style.animation = "fadeout 1.5s";
             
-            myOutfits = localStorage.getItem("myOutfits");
             
             closetpage.style.display="block";
             closetpage.style.animation = "fadein 1.5s";
         });
+
+
+        
+});
 
 
         //settings button goes back to form page
@@ -113,6 +119,7 @@ var styleBut = document.getElementById("Style"),
             CurrStyle = [ ];
         });
         document.getElementById("settings4").addEventListener("click",function(){
+            document.getElementById("closetnotifs").style.display = "none";
             document.getElementById("closetpage").style.display="none";
             document.getElementById("closetpage").style.animation = "fadeout 1.5s";
             firstpage.style.display="block";

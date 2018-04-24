@@ -1,32 +1,18 @@
 var helpBut = document.getElementById("helpBut"),
-    helpDiv= document.getElementById("helpDiv");
+    helpDiv= document.getElementById("helpDiv"),
+    closeBut = document.getElementById("CloseBut");
 
 helpBut.addEventListener("click",function(){
-if (helpDiv.style.display === "none") {
         helpDiv.style.display = "block";
-    } else {
-        helpDiv.style.display = "none";
-    }
 })
 
-var  styleH = document.getElementById("hover1"),
-    closetH = document.getElementById("hover2");
+function closeDiv(){
+    helpDiv.style.display = "none";
+}
 
-        //stylebutton
-        styleBut.addEventListener("mouseenter",function(){
-            styleH.style.display = "block";
-        });
-        styleBut.addEventListener("mouseleave",function(){
-            styleH.style.display = "none";
-        });
-        //closetbutton
-        closetBut.addEventListener("mouseenter",function(){
-            closetH.style.display = "block";
-        });
-        closetBut.addEventListener("mouseleave",function(){
-            closetH.style.display = "none";
-        });
-
+closeBut.addEventListener("click",function(){
+    closeDiv();
+})
 
 
 var sunnyH = document.getElementById("sunnyHover"),
