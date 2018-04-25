@@ -1,0 +1,129 @@
+//CASUAL//
+[
+    {
+        "id": "styleMiClothes",
+        "Style": "SunnyCasualG",
+        "Top": "In warmer temperatures we tend to sweat more and cotton fabric absorbs this sweat and helps the body to cool down. Cotton allows better air circulation and is a popular fabric known for comfort, and simplicity on a sunny day. ",
+        "Bottom": "These shorts are made out of tencel, a functional fabric with many advantages. It is cool to wear and softer against the skin. Tencel transports moisture effectively which makes it a perfect choice for a cloudy day. ",
+    },{
+        "id": "styleMiClothes",
+        "Style": "SunnyCasualB",
+        "Top": "In warmer temperatures we tend to sweat more and cotton fabric absorbs this sweat and helps the body to cool down. Cotton allows better air circulation and is a popular fabric known for comfort, and simplicity on a sunny day. ",
+        "Bottom": "These shorts are made out of tencel, a functional fabric with many advantages. It is cool to wear and softer against the skin. Tencel transports moisture effectively which makes it a perfect choice for a cloudy day. ",
+    },{
+        "id": "styleMiClothes",
+        "Style": "CloudyCasualG",
+        "Top":"This T-shirt is made out of Pima cotton. It feels good against the skin and is very soft to the touch. Pima cotton is also known for its absorbency and comfort. It is a great breathable fabric for a cloudy day.",
+        "Bottom": "These joggers are made of Luxtreme. A smooth, slick, wicking synthetic performance fabric resistant to friction and pilling. Great for a casual wear and comfort."
+    },{
+        "id": "styleMiClothes",
+        "Style": "CloudyCasualB",
+        "Top":"This T-shirt is made out of Pima cotton. It feels good against the skin and is very soft to the touch. Pima cotton is also known for its absorbency and comfort. It is a great breathable fabric for a cloudy day.",
+        "Bottom": "These joggers are made of Luxtreme. A smooth, slick, wicking synthetic performance fabric resistant to friction and pilling. Great for casual wear and comfort."
+    },{
+        "id": "styleMiClothes",
+        "Style": "RainyCasualG",
+        "Top":"This shirt and jacket combo are both made out of blended light cotton fleece fabric that is naturally breathable, and soft against your skin. The jacket  has been treated with a thin layer of resin to repel water. It also provides lightweight warmth perfect for a rainy day",
+        "Bottom": "These leggings are made out of Nulu, a lightweight, buttery-soft fabric that is sweat absorbant and extra stretchy for supreme comfort and movement."
+    },{
+        "id": "styleMiClothes",
+        "Style": "RainyCasualB",
+        "Top":"This shirt and jacket combo are both made out of blended light cotton fleece fabric that is naturally breathable, and soft against your skin. The jacket  has been treated with a thin layer of resin to repel water. It also provides lightweight warmth perfect for a rainy day",
+        "Bottom": "These fashion forward pants are made of Warpstreme, a sweat absorbing, heat retaining fabric, with a  four-way stretch. Great for a casual look, while keeping comfortable."
+        
+    },{
+        "id": "styleMiClothes",
+        "Style": "SnowyCasualG",
+        "Top":"To ensure warmth in cold, snowy weather we've chosen a fleece top that is a thick, lightweight and very soft. This fabric provides great thermal insulation to help your skin breathe and maintain a comfortable temperature in the coldest weather. We've paired the top with a down jacket as they are fantastic insulators. The down is used to fill the jacket and create many tiny air pockets that trap warm air and therefore retain heat. ",
+        "Bottom": "These jeans, aren't just ordinary jeans, they're lined with synthetic fleece to add a nice layer of insulation, warmth and comfort. They also make a great fashion piece for any outfit."
+    },{
+        "id": "styleMiClothes",
+        "Style": "SnowyCasualB",
+        "Top":"To ensure warmth in cold, snowy weather we've chosen a fleece top that is a thick, lightweight and very soft. This fabric provides great thermal insulation to help your skin breathe and maintain a comfortable temperature in the coldest weather. We've paired the top with a down jacket as they are fantastic insulators. The down is used to fill the jacket and create many tiny air pockets that trap warm air and therefore retain heat. ",
+        "Bottom": "These joggers, aren't just ordinary joggers. They're made of corduroy a fabric commonly composed of tufted cords, a ridged form of velvet. This is a flexible fabric, and it’s a great option for the winter monthsas they will keep your warm, and add depth and volume to your outfit."
+    },
+    //BUSINESS//
+    {
+        "id": "styleMiClothes",
+        "Style": "SunnyBusinessG",
+        "Top":"This silk blouse is perfect for a warm sunny day. Silk is breathable and keeps you cool on hot days and through warm nights. Silk regulates body temperature, and has impressive moisture wicking properties, keeping you dry and comfortable in any climate.",
+        "Bottom": "This skirt is made out of Rayon, a fabric that has very thin fibers, which allows it to breathe more than other fabrics and gives it a lightness that prevents it from sticking to a body. Since it is so comfortable and cooling to wear, rayon is an especially good fabric for sunny days."
+        
+    }, {
+       "id": "styleMiClothes",
+        "Style": "SunnyBusinessB",
+        "Top":"This dress top is made out of Rayon, a fabric that has very thin fibers, which allows it to breathe more than other fabrics and gives it a lightness that prevents it from sticking to a body. Since it is so comfortable and cooling to wear, rayon is an especially good fabric for sunny days.",
+        "Bottom": "Flannel trousers are a long-standing classic, and with good reason, they pair with almost everything and the fabric is comfortable and durable, cool in the summer and warm in the winter." 
+    }, {
+        "id": "styleMiClothes",
+        "Style": "CloudyBusinessG",
+        "Top":"This cotton long sleeve dress shirt is perfect for a cloudy day at the office! Cotton provides great air circulation and is a popular fabric known for comfort, and simplicity on any given day. Dress it up or down.",
+        "Bottom": "This skirt is made out of Polyester, a fabric that isn't very breathable, but feels light against the skin. Polyester is also an anti-wrinkle fabric to ensure you look your best all day long."
+        
+    }, {
+       "id": "styleMiClothes",
+        "Style": "CloudyBusinessB",
+        "Top":"This cotton long sleeve dress shirt is perfect for a cloudy day at the office! Cotton provides great air circulation and is a popular fabric known for comfort, and simplicity on any given day. Dress it up or down.",
+        "Bottom": "This light-mid weight cotton twill khaki fabric is perfect for a cloudy day. It is crisp with the perfect amount of stretch to make those fitted garments comfortable to wear. It is soft and lightweight making it perfect for whatever weather is coming at you" 
+    },{
+        "id": "styleMiClothes",
+        "Style": "RainyBusinessG",
+        "Top":"This dress top and sweater duo is sure to make a statement.The under-shirt is made of cotton to provide comfort throughout the day while the sweater is made of wool,  natural insulator material to keep the bodywarm in cooler temperatures. The scales on the surface of the fiber and the crimp in the fiber create little pockets of air that serve as insulative barriers and give the garment greater warmth.",
+        "Bottom": "These trousers are made out of Polyester, a fabric that isn't very breathable, but feels light against the skin. Polyester provides warm and is water-resistant making them great for a rainy day. Polyester is also an anti-wrinkle fabric to ensure you look your best all day long."
+"
+    },{
+        "id": "styleMiClothes",
+        "Style": "RainyBusinessB",
+        "Top":"This dress top and sweater duo is sure to make a statement.The under-shirt is made of cotton to provide comfort throughout the day while the sweater is made of wool,  natural insulator material to keep the bodywarm in cooler temperatures. The scales on the surface of the fiber and the crimp in the fiber create little pockets of air that serve as insulative barriers and give the garment greater warmth.",
+        "Bottom": "These trousers are made out of Polyester, a fabric that isn't very breathable, but feels light against the skin. Polyester provides warmth and is water-resistant making them great for a rainy day. Polyester is also an anti-wrinkle fabric to ensure you look your best all day long."
+    }, {
+        "id": "styleMiClothes",
+        "Style": "SnowyBusinessG",
+        "Top":"Can't forget your jacket on a snowy day! This fashion-forward trench coat is made of 100% wool to provide warmth and natural insulation on a cold day. The Turtle Neck sweater is made of 50% Acrylic and 50% cotton to create a blend similar to wool, ensuring you stay warm on a cold day.",
+        "Bottom": "These tousers, aren't just ordinary trousers, they're lined with synthetic fleece to add a nice layer of insulation, warmth and comfort. They also make a great fashion piece for any outfit."
+        
+    },{
+       "id": "styleMiClothes",
+        "Style": "SnowyBusinessB",
+        "Top":"This polyester long sleeve dress shirt is perfect for a cloudy day at the office, and there's nothing better than a nice wool coat to pair with it on a snowy day. The trench coat is made of 100% wool to provide warmth and natural insulation on a cold day. The shirt is made of Lyocell an eco fabric that has natural breathability and can retain heat on cold days.",
+        "Bottom": "These tousers, aren't just ordinary trousers, they're lined with synthetic fleece to add a nice layer of insulation, warmth and comfort. They also make a great fashion piece for any outfit." 
+    },
+      //FANCY//
+    {
+        "id": "styleMiClothes",
+        "Style": "SunnyFancyG",
+        "Dress": "This dress is made out of Rayon, a fabric that has very thin fibers, which allows it to breathe more than other fabrics and gives it a lightness that prevents it from sticking to a body. Although Rayon is known for it's comfort it also works to dress up any outfit. It's cooling properties are especially great for sunny days"
+    },{
+        "id": "styleMiClothes",
+        "Style": "SunnyFancyB",
+        "Top":"This dress top is made out of Rayon, a fabric that has very thin fibers, which allows it to breathe more than other fabrics and gives it a lightness that prevents it from sticking to a body. Since it is so comfortable and cooling to wear, rayon is an especially good fabric for sunny days. Pair it with a bow tie and you're ready for any fancy occasion!",
+        "Bottom": "These cashmere trousers are a must! On cool mornings, the natural fibre keeps you wonderfully warm and ideally balances out the rising temperatures during the course of the day.Even on warm days, cashmere offers an all-round sense of wellbeing. They're perfect if you're looking to dress up an outfit." 
+    },  {
+        "id": "styleMiClothes",
+        "Style": "CloudyFancyG",
+        "Dress": "This polyester dress is perfect for a cloudy day out on the town. Polyester is a fabric that isn't very breathable, but feels light against the skin. Polyester provides warmth and is an anti-wrinkle fabric to ensure you look your best all day long."
+    },{
+        "id": "styleMiClothes",
+        "Style": "CloudyFancyB",
+        "Top":"This dress top is made out of Rayon, a fabric that has very thin fibers, which allows it to breathe more than other fabrics and gives it a lightness that prevents it from sticking to a body. Paired with a Polyester blazer you're sure to look fancy, without a wrinkle in sight.", 
+        "Bottom": "These cashmere trousers are a must! On cool mornings, the natural fibre keeps you wonderfully warm and ideally balances out the rising temperatures during the course of the day. They're perfect if you're going for a fancy look." 
+    },{
+        "id": "styleMiClothes",
+        "Style": "RainyFancyG",
+        "Dress": "This blend of Polyester and Spandex makes for the perfect dress. It's long sleeves and length will provide warmth in the rain and retain heat by hugging to your body. Polyester will provide a lightness against your skin and ensure no wrinkles. Great for a fancy night out."
+    },{
+        "id": "styleMiClothes",
+        "Style": "RainyFancyB",
+        "Top":"This dress top is made out of Rayon, a fabric that has very thin fibers, making it the perfect pair for this Wool, Cashmere blend suit jacket. The Wool and Cashmere blend provides warmth and waterproof properties on a rainy day.", 
+        "Bottom": "These Wool and Cashmere blend dress pants are a must! They're sure to keep you warm on a rainy day, and add a fancy feel to your look. The cashmere provides some waterproof technologies ensuring you'll keep dry for your special occasion." 
+        },{
+        "id": "styleMiClothes",
+        "Style": "SnowyFancyG",
+        "Dress": "This blend of Polyester and Spandex makes for the perfect dress. It's long sleeves and turtle neck design and length will provide warmth in the cold weather. It's clingy design will retain heat by hugging to your body. You can't forget a faux fur shawl to polish the outfit off! The faux fur will provide the extra warmth you need to make it through the night, and is a great accessory to any outfit. "
+    },{
+        "id": "styleMiClothes",
+        "Style": "SnowyFancyB",
+        "Top":"This polyester long sleeve dress shirt is perfect for a chilly occasion as the fabric traps heat, and there's nothing better than a nice Wool and Cashmere blend lon suit jacket to pair with it on a snowy day. The mix of fabrics are sure to keep you insulated and warm while still looking your best.",
+        "Bottom": "These Wool and Cashmere blend dress pants are a must! They're sure to keep you warm on a chilly day, and add a fancy feel to your look. The Wool provides insulated warmth while the cashmere provides some waterproof technologies ensuring you'll keep dry for your special occasion." 
+    }
+]

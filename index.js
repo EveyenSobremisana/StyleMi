@@ -72,9 +72,11 @@ var styleBut = document.getElementById("Style"),
             weatherpage.style.display="block";
             weatherpage.style.animation = "fadein 1.5s";
         });
-        closetB.addEventListener("click",function(){ {
+// unefficient way of showing the notifs
+        closetB.addEventListener("click",function(){ 
              document.getElementById("closetnotifs").style.display = "block";
-    }
+        });
+
         closetBut.addEventListener("click",function(){
             
             secondpage.style.display="none";
@@ -86,12 +88,11 @@ var styleBut = document.getElementById("Style"),
         });
 
 
-        
-});
+
 
 
         //settings button goes back to form page
-        document.getElementById("settings1").addEventListener("click",function(){
+        document.getElementById("home1").addEventListener("click",function(){
             secondpage.style.display="none";
             secondpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
@@ -100,7 +101,7 @@ var styleBut = document.getElementById("Style"),
             CurrWeather= [ ];
             CurrStyle = [ ];
         });
-        document.getElementById("settings2").addEventListener("click",function(){
+        document.getElementById("home2").addEventListener("click",function(){
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
@@ -109,7 +110,7 @@ var styleBut = document.getElementById("Style"),
             CurrWeather= [ ];
             CurrStyle = [ ];
         });
-        document.getElementById("settings3").addEventListener("click",function(){
+        document.getElementById("home3").addEventListener("click",function(){
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
@@ -118,8 +119,12 @@ var styleBut = document.getElementById("Style"),
             CurrWeather= [ ];
             CurrStyle = [ ];
         });
-        document.getElementById("settings4").addEventListener("click",function(){
+        document.getElementById("home4").addEventListener("click",function(){
+            //inefficient way//
+            closetB.style.zIndex = 0;
             document.getElementById("closetnotifs").style.display = "none";
+            
+            
             document.getElementById("closetpage").style.display="none";
             document.getElementById("closetpage").style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
@@ -144,8 +149,7 @@ var styleBut = document.getElementById("Style"),
             
 
         });
-             CurrWeather= [ ];
-            CurrStyle = [ ]; document.getElementById("goBack1").addEventListener("click",function(){
+        document.getElementById("goBack1").addEventListener("click",function(){
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             weatherpage.style.display="block";
@@ -154,7 +158,7 @@ var styleBut = document.getElementById("Style"),
            
 
         });     
-            document.getElementById("goBack2").addEventListener("click",function(){
+        document.getElementById("goBack2").addEventListener("click",function(){
             CurrWeather= [ ];
             CurrStyle = [ ];
             dressingpage.style.display="none";
@@ -165,8 +169,7 @@ var styleBut = document.getElementById("Style"),
             
 
         });
-
-            document.getElementById("goBack3").addEventListener("click",function(){
+        document.getElementById("goBack3").addEventListener("click",function(){
             CurrWeather= [ ];
             CurrStyle = [ ];
             closetpage.style.display="none";
@@ -177,20 +180,23 @@ var styleBut = document.getElementById("Style"),
             
 
         });
-
-            document.getElementById("goToCloset").addEventListener("click",function(){
+        document.getElementById("goToCloset").addEventListener("click",function(){
              CurrWeather= [ ];
-            CurrStyle = [ ];
-                dressingpage.style.display="none";
+             CurrStyle = [ ];
+                
+            dressingpage.style.display="none";
             dressingpage.style.animation = "fadeout 1.5s";
             closetpage.style.display="block";
             closetpage.style.animation = "fadein 1.5s";
             });
             
            
+/*Closing the facts div*/
+document.getElementById("closeFacts").addEventListener("click",function(){
+    document.getElementById("facts").style.display = "none";
+})
 
 
-/*************************************************************/
 
 
 

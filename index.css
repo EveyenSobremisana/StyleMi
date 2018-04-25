@@ -34,6 +34,19 @@ p{
 p:hover{
     cursor: pointer;
 }
+.about{
+    width: 90%;
+    display: block;
+}
+#aboutdiv{
+    width: 60%;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 23%;
+
+    margin: auto;
+}
 .aboutboxes{
     width: 70%;
     position: absolute;
@@ -104,7 +117,7 @@ font-size: 1.2em;
     position: absolute;
     
 }
-#CloseBut{
+#CloseBut, #closeFacts{
     top: -3%;
     right: -3%;
 }
@@ -302,28 +315,22 @@ font-size: 1.2em;
     right: 0px;
     top: 0px;
 }
-.settinglogo{
-    width: 50%;
+.Homelogo{
+    width: 60%;
     position: absolute;
-    top: 10px;
-    right: 5px;
+    top: 5px;
+    right: 10px;
 }
 .choices{
     width: 18%;
     position: absolute;  
     margin-left: 23px;
-    bottom: 26px;
+    bottom: 20px;
 }
 #Closet{ 
     left: 180px;
 }
 #Style{ left: 80px;}
-.choices1{
-    width: 20%;
-    position: absolute;  
-    margin-left: 20px;
-    bottom: 0px;
-}
 
 #closetnotifs{
     width: 30%;
@@ -333,6 +340,33 @@ font-size: 1.2em;
     animation-name: Cnotifs;
     animation-duration: .1s;
     display: none;
+}
+#hidecloset{
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    right: 100px;
+    bottom: 30px;
+    z-index: 1;
+}
+
+#label1{
+    font-size: .8em;
+    position: absolute;
+    top: 45px;
+    left: 98px;
+}
+#label2{
+     font-size: .8em;
+    position: absolute;
+    top: 45px;
+    right: 120px;
+}
+.labels { 
+font-size:1.2em;
+position: absolute;
+    top: 135px;
+    left: 43px;
 }
 
 @keyframes Cnotifs{
@@ -345,8 +379,7 @@ font-size: 1.2em;
          bottom: 94px;
     }
 }
-#hover1{left: 80px;}
-#hover2{left: 180px;}
+
 .bottom{
     width: 100%;
     height: 80px;
@@ -407,35 +440,6 @@ font-size: 1.2em;
     right: 0px;
     bottom: 0px;
 }
-.iconsH{
-    width: 70%;
-    display:none; 
-    
-}
-#sunnyHover{
-    position: absolute;
-    top: 55px;
-    left: 20px;
-    
-}
-#cloudyHover{
-    position: absolute;
-    top: 55px;
-    right: 20px;
-    
-}
-#rainyHover{
-    position: absolute;
-    bottom: 55px;
-    left: 20px;
-    
-}
-#snowyHover{
-    position: absolute;
-    bottom: 55px;
-    right: 20px;
-   
-}
 .go{
     width: 80%;
 }
@@ -478,21 +482,7 @@ font-size: 1.2em;
 left: 80px;
 bottom: 0px;}
 
-#casualHover{
-    position: absolute;
-    top: 55px;
-    left: 20px;
-}
-#businessHover{
-    position: absolute;
-    top: 55px;
-    right: 20px;
-}
-#fancyHover{
-    position: absolute;
-    bottom:55px;
-    left: 20px;
-}
+
 
 /*Dressing Page*/
 #dressingpage{
@@ -530,45 +520,33 @@ bottom: 0px;}
     top: 60px;
     z-index: 5;
 }
-#facts1{
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 124px;
+#facts{
+    width: 250px;
+    height: 300px;
     position: absolute;
-    top: 65px;
-    left: 10px;
-}
-#facts2{
-    background-repeat: no-repeat;
-    width: 140px;
-    height: 124px;
-    position: absolute;
-    top: 65px;
-    right:10px; 
-}
-#facts3{
-    background-repeat: no-repeat;
-    width: 140px;
-    height: 124px;
-    position: absolute;
-    bottom: 150px;
-    left: 10px;
-}
-#facts4{
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 124px;
-    position: absolute;
-    bottom: 130px;
+    top: 0px;
+    left: 0px;
     right: 0px;
+    bottom: 0px;
+    margin: auto;
+    background-color: antiquewhite;
+    z-index: 5;
+    display: none;
+}
+#factInfo{
+    width: 14%;
+    position: absolute;
+    right: 70px;
+    bottom: 13px;
 }
 
 #dress{
-    width: 100%;
+    width: 70%;
     height: 416px;
     position:absolute;
     top: -45px;
-    left: 81px;
+    left: 55px;
+    background-position: center;
     background-repeat: no-repeat; 
 }
 
@@ -611,3 +589,32 @@ bottom: 0px;}
     display: inline-block;
     
 }
+
+/*finalLook*/
+#finallookpage{
+    width: 375px;
+    height: 667px;
+     margin: 0 auto;
+     display: none;
+     position: relative;
+}
+#finaldress{
+    width: 70%;
+    height: 416px;
+    position:absolute;
+    top: -9.7px;
+    left: 53px;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+#final{
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    
+        font-size: 2rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+    
