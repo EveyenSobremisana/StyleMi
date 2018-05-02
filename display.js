@@ -476,24 +476,31 @@ function saveClothes (){
       Cdiv.className="saved";
       Cdiv.id = box;
     newImage = document.createElement("div");
-    newImage.className="imgsaved"
+    newImage.className="imgsaved";
     newImage.style.backgroundImage = dressSaved;
+    newImage.id = box+"i";
+    
+    // i to make it different from the boxes
 
   
     function CdivDel(id){
         document.getElementById(id).remove();
     }
+    
     Cdiv.addEventListener("click", function(){
-        console.log("clicked");
-        finalpage.style.backgroundImage = dressingpage.style.backgroundImage ; 
-//        CdivDel(Cdiv.id)
+		//document.getElementById("result").innerHTML = "You have chosen "+ parseInt(CurrWeather[i])+ " and "+parseInt(CurrStyle[i]);
+        console.log("clicked", this.id);
+        finalpage.style.backgroundImage = dressingpage.style.backgroundImage; 
+        finaldress.style.backgroundImage = document.getElementById(this.id+"i").style.backgroundImage;
+		
+        
         
         //after you click Cdiv, you will redirected to the Final Look Page
             closetpage.style.display="none";
             closetpage.style.animation = "fadeout 1.5s";
             finalpage.style.display="block";
             finalpage.style.animation = "fadein 1.5s";
-            finaldress.style.backgroundImage = dressSaved;
+            
    })
     
     Cdiv.appendChild(newImage);
@@ -505,3 +512,4 @@ addCloset.addEventListener("click",function(){
     saveClothes();
 
 })
+

@@ -8,202 +8,228 @@
     <meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
     <body>
-<div id="pagewrap">
-
-      <div id="content">
-            <img src="SVG/logotext.svg" id="logotext"/>
-            <button id="next" class="btn"> Begin</button>
-            <img src="SVG/help.svg" id="helpBut"/>
-          <div id="aboutdiv"> 
+<!--		start of landing page-->
+		<div id="pagewrap">
+	<div id="content">
+		<img src="SVG/logotext.svg" id="logotext"/>
+		<button id="next" class="btn"> Begin</button>
+		<img src="SVG/help.svg" id="helpBut"/>
+		
+		<div id="aboutdiv"> 
           <img src="SVG/About%20Us.svg" id="AboutUs" class="about"/>
           <img src="SVG/About%20the%20App.svg" id="AboutApp" class="about"/>
-            </div>
-                <div id="helpDiv">
-                    <img src="SVG/closeBut.svg" class="closeBut" id="CloseBut"/>
-                        <br/>
-                        <div id="helpTitle">
-                        How to use Style Mi
-                        </div>
-                            <ol id="helpSteps">
-                            <li>To get started, Fill out the form, and press <b>start</b> to begin.</li><br/>
-                            <li>Click on the <b> Create Look </b> icon to choose the ideal weather and style for your occasion. </li><br/>
-                            <li>Once you selected your prefered weather and style, your outfit will appear on your avatar. You can then click the <b> arrows </b> to the right and left to see variations. </li> <br/>
-                            <li>Once you've completed your look, click on <b>Add to Closet</b> to save it or click on the <b> Reset </b> button to return to the create look options.</li> <br/>
-                            <li>Click on the <b>closet</b> icon to view passed saved looks or delete previously saved looks.</li>
-                            
-                            </ol>
-                       
-                </div>
-          
-                <div id="aboutboxes">
-                <img src="SVG/aboutus.svg" id="aboutUsBox" class="aboutboxes"/>
-                <img src="SVG/aboutapp.svg" id="aboutAppBox" class="aboutboxes"/>
-                </div>
-
-      </div>
-               
-
-</div>
-    
-<div id="firstpage">
-           <img id="logo" src="SVG/logo.svg"/>
-           <div id="formbox">
-                
-                NAME <input type="text" id="name" maxlength="10" required="required" placeholder="5-10 characters" onfocus="this.placeholder = ''" onblur="this.placeholder='5-10 characters'"/> <br/><br/>
+		</div>
+		
+		<div id="helpDiv">
+			<img src="SVG/closeBut.svg" class="closeBut" id="CloseBut"/>
+			<br/>
+			<div id="helpTitle">
+				How to use Style Mi
+			</div>
+			<ol id="helpSteps">
+				<li>To get started, Fill out the form, and press <b>start</b> to begin.</li><br/>
+				<li>Click on the <b> Create Look </b> icon to choose the ideal weather and style for your occasion. </li><br/>
+				<li>Once you selected your prefered weather and style, your outfit will appear on your avatar. You can then click the <b> arrows </b> to the right and left to see variations. </li> <br/>
+				<li>Once you've completed your look, click on <b>Add to Closet</b> to save it or click on the <b> Reset </b> button to return to the create look options.</li> <br/>
+				<li>Click on the <b>closet</b> icon to view passed saved looks or delete previously saved looks.</li>
+			</ol>
+		</div>
+		
+		<div id="aboutboxes">
+			<div id="aboutUsBox" class="aboutboxes">
+				<img src="SVG/closeBut.svg" class="closeBut" id="aboutUsClose"/>
+				<b>Style Mi </b>is an event based planning app designed to make the everyday life of both men and women just a little bit easier when it comes to deciding on what to wear. Style Mi brings the fun back into fashion planning and makes it convenient for users to decide on possible outfits ahead of time.<br/><br/> At Style Mi every result is based on user inputs to help guide you to your ideal outfit. Style Mi will not only save you time but will also help you discover new fashion trends you may never have thought of trying before. Our clothing designs have a modern, fashion forward feel that you are sure to love. Get started now and discover the best new looks with Style Mi!
+			</div>
+			
+			<div id="aboutAppBox" class="aboutboxes">
+				<img src="SVG/closeBut.svg" class="closeBut" id="aboutAppClose"/>
+				Meet the creators of Style Mi, <b> Keara and Eveyen </b>! We are both BCIT students in the Digital Design and Development program and we wanted to create a fun and interactive app with a focus on convenience and fashion. <br/> <br/> That is how we came up with Style Mi! We have combined our UX and UI design capabilities to come up with the ideal app for both men and women looking for a bit of help when it comes to deciding and planning what to wear. We hope you like it!
+			</div>
+		</div>
+	</div>
+		
+		</div>
+<!--		end of landing page-->
+<!--		start of first page - name and gender form-->
+		
+		<div id="firstpage">
+			<img id="logo" src="SVG/logo.svg"/>
+			
+			<div id="formbox">
+				NAME <input type="text" id="name" maxlength="10" required="required" placeholder="5-10 characters" onfocus="this.placeholder = ''" onblur="this.placeholder='5-10 characters'"/> <br/><br/>
                 GENDER <br/>
                        &emsp;&emsp;&emsp;&emsp;<input type="radio" name="gender" id="female"> <span class="gender">Female</span><br/>
                        &emsp;&emsp;&emsp;&emsp;<input type="radio" name="gender" id="male"> <span class="gender">Male</span>
-        
-            </div>
-            <img src="SVG/FillForm.svg" id="formnotifs"/>
+			</div>
+			<img src="SVG/FillForm.svg" id="formnotifs"/>
             <button id="start" class="btn"> Start</button>
-</div>
-        
-<div id="secondpage">
-    <div class="top">
-            <div id="nameDiv"></div>
-            <div class="setting">
-            <img src="SVG/homeBut.svg" class="Homelogo" id="home1"/>
-            </div>
-    </div>
-    <div class="bottom">
-            
-    
-        <img src="SVG/closetnotifs.svg" id="closetnotifs"/>
-        <div id="hidecloset"></div>
-        
-          <p id="label1"> Change Look </p>
-        <img src="SVG/Style.svg" id="Style" class="choices"/>
-          <p id="label2"> Closet </p>
-        <img src="SVG/Closet.svg" id="Closet" class="choices"/>
-
-        
-           
-    </div>
-</div>
-        
-<div id="weatherpage">
-      <div class="top">
-                <div id="weathertitle"> What's the weather?</div>
-                <div class="setting">
-                <img src="SVG/homeBut.svg" class="Homelogo" id="home2"/>
+		
+		</div>
+		
+<!--		end of first page-->
+<!--		start of second page-->		
+		
+		<div id="secondpage">
+			<div class="top">
+				<div id="nameDiv"></div>
+				<div class="setting">
+					<img src="SVG/homeBut.svg" class="Homelogo" id="home1"/>
+				</div>
+			</div>
+			
+			<div class="bottom">
+				<img src="SVG/closetnotifs.svg" id="closetnotifs"/>
+				<div id="hidecloset"></div>
+				<p id="label1"> Change Look </p>
+				<img src="SVG/Style.svg" id="Style" class="choices"/>
+				<p id="label2"> Closet </p>
+				<img src="SVG/Closet.svg" id="Closet" class="choices"/>
+			</div>
+		</div>
+		
+<!--		end of second page-->
+<!--		start of weather page: choose what kind of weather-->	
+		
+		<div id="weatherpage">
+			<div class="top">
+				<div id="weathertitle"> What's the weather?</div>
+				<div class="setting">
+					<img src="SVG/homeBut.svg" class="Homelogo" id="home2"/>
                 </div>
-       </div>
-        <div class="middle">
-             
-            <div id="box1">  
-                <img src="SVG/Sunny.svg" id="sunnyIcon" class="icons"/>
-                <p class="labels"> Sunny</p>
-            </div>
-            
-            <div id="box2">
-                 <img src="SVG/Cloudy.svg" id="cloudyIcon" class="icons" />
-               <p class="labels"> Cloudy</p>
-            </div>
-            
-            <div id="box3">
-            <img src="SVG/Rainy.svg" id="rainyIcon" class="icons"/>
-         <p class="labels"> Rainy</p>
-            </div>
-            
-            <div id="box4">
-                <img src="SVG/Snowy.svg" id="snowyIcon" class="icons"/>
-            <p class="labels"> Snowy</p>
-            </div>
-     
-        </div> 
-            
-        <div class="bottom">
-                <div class="backDiv">
-                    <img src="SVG/back.svg" id="goBack" class="go" /> </div>
-                </div>
-</div>        
-        
-<div id="stylepage">
-      <div class="top">
-            <div id="styletitle"> Select your style:</div>
-            <div class="setting">
-            <img src="SVG/homeBut.svg" class="Homelogo" id="home3"/>
-            </div>
-       </div>
-      <div class="middle">
-          <div id="box5">
-            <img src="SVG/Casual.svg" id="casualIcon" class="icons"/>
-              <p class="labels"> Casual</p>
-               </div> 
-          <div id="box6">
-            <img src="SVG/Business.svg" id="businessIcon" class="icons" />
-           <p class="labels"> Business</p>
-          </div>
-          <div id="box7">
-            <img src="SVG/Fancy.svg" id="fancyIcon" class="icons"/>
-            <p class="labels"> Fancy</p>
-          </div>
-    </div>
-   
-      <div class="bottom">
-        <div class="backDiv">
-        <img src="SVG/back.svg" id="goBack1" class="go" /> 
-        </div>
-    
-      </div>      
-</div>
-        
-<div id="dressingpage">
-    <div class="top">
-                <button id="addCloset" class="btn"> Add to Closet</button>
-    </div>
-    <div id="facts">
-        <img src="SVG/closeBut.svg" class="closeBut" id="closeFacts"/>
-    
-    </div>
-            
-    <div id="middle">
-
-                <img src="SVG/changeleft.svg" class="change" id="changeLeft">
-                <img src="SVG/changeright.svg" class="change" id="changeRight">   
-                <div id="dress"></div>
-    </div>
-    <div class="bottom">
-        <div class="backDiv">
-            <img src="SVG/back.svg" id="goBack2" class="go"/>
-        </div>
-        <div id="factsBut"> 
-        <img src="SVG/helfinfo.svg" id="factInfo"/>
-        </div>
-        <div class="nextDiv">
-            <img src="SVG/Closet.svg" id="goToCloset" class="go"/>
-        </div>
-    </div>
-</div>
-        
-<div id="closetpage">
-    <div class="top">
-        <div class="setting">
-            <img src="SVG/homeBut.svg" class="Homelogo" id="home4"/>
-        </div>
-    </div>
-    <div id="closetSaved"></div>
-    <div class="bottom">
-        <div class="backDiv">
-            <img src="SVG/back.svg" id="goBack3" class="go"/> 
-        </div>
-    </div>
-</div>
-        
-<div id="finallookpage">
-    <div class="top"> <div id="final"> Here is your final look!</div></div>
-    <div class="middle">
-    <div id="finaldress"></div>
-    </div>
-    <div class="bottom"></div>
-    
-        
-</div>
-    
-        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="index.js"></script>
-        <script src="display.js"></script>
-    </body>
+			</div>
+			
+			<div class="middle">
+				<div id="box1">
+					<img src="SVG/Sunny.svg" id="sunnyIcon" class="icons"/>
+					<p class="labels"> Sunny</p>
+				</div>
+				
+				<div id="box2">
+					<img src="SVG/Cloudy.svg" id="cloudyIcon" class="icons" />
+					<p class="labels"> Cloudy</p>
+				</div>
+				
+				<div id="box3">
+					<img src="SVG/Rainy.svg" id="rainyIcon" class="icons"/>
+					<p class="labels"> Rainy</p>
+				</div>
+				
+				<div id="box4">
+					<img src="SVG/Snowy.svg" id="snowyIcon" class="icons"/>
+					<p class="labels"> Snowy</p>
+				</div>
+			</div>
+			
+			<div class="bottom">
+				<div class="backDiv">
+					<img src="SVG/back.svg" id="goBack" class="go" />
+				</div>
+			</div>
+		</div>
+<!--		end of weather page-->
+<!--		start of style page: choose what kind of style-->
+		
+		
+		<div id="stylepage">
+			<div class="top">
+				<div id="styletitle"> Select your style:</div>
+				<div class="setting">
+					<img src="SVG/homeBut.svg" class="Homelogo" id="home3"/>
+				</div>
+			</div>
+			
+			<div class="middle">
+				<div id="box5">
+					<img src="SVG/Casual.svg" id="casualIcon" class="icons"/>
+					<p class="labels"> Casual</p>
+				</div>
+				<div id="box6">
+					<img src="SVG/Business.svg" id="businessIcon" class="icons" />
+					<p class="labels"> Business</p>
+				</div>
+				<div id="box7">
+					<img src="SVG/Fancy.svg" id="fancyIcon" class="icons"/>
+					<p class="labels"> Fancy</p>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="backDiv">
+					<img src="SVG/back.svg" id="goBack1" class="go" />
+				</div>
+			</div>
+		</div>
+<!--		end of style page-->
+<!--		start of dress page: generates a selection of clothes and facts based on the choses weather and style-->
+		
+		<div id="dressingpage">
+			<div class="top">
+				<button id="addCloset" class="btn"> Add to Closet</button>
+			</div>
+			<div id="facts">
+				<img src="SVG/closeBut.svg" class="closeBut" id="closeFacts"/>
+				<div id="factsin"></div>
+			</div>
+			
+			<div id="middle">
+				<img src="SVG/changeleft.svg" class="change" id="changeLeft">
+                <img src="SVG/changeright.svg" class="change" id="changeRight">
+				<div id="dress"></div>
+			</div>
+			
+			<div class="bottom">
+				<div class="backDiv">
+					<img src="SVG/back.svg" id="goBack2" class="go"/>
+				</div>
+				<div id="factsBut">
+					<img src="SVG/helfinfo.svg" id="factInfo"/>
+				</div>
+				<div class="nextDiv">
+					<img src="SVG/Closet.svg" id="goToCloset" class="go"/>
+				</div>
+			</div>
+		</div>
+<!--		end of dress page-->
+<!--		start of closet page: can see the saved photo-->
+		
+		<div id="closetpage">
+			<div class="top">
+				<div class="setting">
+					<img src="SVG/homeBut.svg" class="Homelogo" id="home4"/>
+				</div>
+			</div>
+			<div id="closetSaved">
+			</div>
+			<div id="chooseDiv">
+					What would you like to do? <br/><br/>
+					<button id="view">View Mi</button>
+					<button id="delete">Delete Mi</button>
+				
+				</div>
+			<div class="bottom">
+				<div class="backDiv">
+					<img src="SVG/back.svg" id="goBack3" class="go"/>
+				</div>
+			</div>
+		</div>
+<!--		end of closet page-->
+<!--		start of final page: can see the final outfit -->
+		
+		<div id="finallookpage">
+			<div class="top"> <div id="final"> Here is your final look!</div>
+			</div>
+			<div class="middle">
+				<div id="finaldress"></div>
+			</div>
+			<div class="bottom">
+				
+				<div id="result"></div>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="index.js"></script>
+		<script src="display.js"></script>
+		<script src="facts.js"></script>
+	
+	</body>
 </html>

@@ -42,6 +42,8 @@ var gender = [ ];
             nameDiv.innerHTML = document.getElementById("name").value;
             secondpage.style.backgroundImage = "url(SVG/bg1.svg)";
             formNotifs.style.display="none";
+            CurrWeather= [ ];
+            CurrStyle = [ ];
             console.log(gender);
             }else if(male.checked){
               gender.push("maleGen");
@@ -53,6 +55,8 @@ var gender = [ ];
             nameDiv.innerHTML = document.getElementById("name").value;
                 secondpage.style.backgroundImage = "url(SVG/bg2.svg)";
                 formNotifs.style.display="none";
+            CurrWeather= [ ];
+            CurrStyle = [ ];
                 console.log(gender);
             }else {
                 formNotifs.style.display="block";
@@ -97,27 +101,27 @@ var styleBut = document.getElementById("Style"),
             secondpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
             firstpage.style.animation = "fadein 1.5s";
-            gender= [ ];
-            CurrWeather= [ ];
-            CurrStyle = [ ];
+            gender= [];
+            CurrWeather= [];
+            CurrStyle = [];
         });
         document.getElementById("home2").addEventListener("click",function(){
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
             firstpage.style.animation = "fadein 1.5s";
-            gender= [ ];
-            CurrWeather= [ ];
-            CurrStyle = [ ];
+            gender= [];
+            CurrWeather= [];
+            CurrStyle = [];
         });
         document.getElementById("home3").addEventListener("click",function(){
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
             firstpage.style.animation = "fadein 1.5s";
-            gender= [ ];
-            CurrWeather= [ ];
-            CurrStyle = [ ];
+            gender= [];
+            CurrWeather= [];
+            CurrStyle = [];
         });
         document.getElementById("home4").addEventListener("click",function(){
             //inefficient way//
@@ -129,19 +133,18 @@ var styleBut = document.getElementById("Style"),
             document.getElementById("closetpage").style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
             firstpage.style.animation = "fadein 1.5s";
-            gender= [ ];
-            CurrWeather= [ ];
-            CurrStyle = [ ];
+            gender= [];
+            CurrWeather= [];
+            CurrStyle = [];
         });
-
-
-
 
 
 // BACK BUTTON 
 
         document.getElementById("goBack").addEventListener("click",function(){
-            weatherpage.style.display="none";
+            CurrWeather= [];
+            CurrStyle = [];
+			weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             secondpage.style.display="block";
             secondpage.style.animation = "fadein 1.5s";
@@ -150,7 +153,9 @@ var styleBut = document.getElementById("Style"),
 
         });
         document.getElementById("goBack1").addEventListener("click",function(){
-            stylepage.style.display="none";
+            CurrWeather= [];
+            CurrStyle = [];
+			stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             weatherpage.style.display="block";
             weatherpage.style.animation = "fadein 1.5s";
@@ -159,8 +164,10 @@ var styleBut = document.getElementById("Style"),
 
         });     
         document.getElementById("goBack2").addEventListener("click",function(){
-            CurrWeather= [ ];
-            CurrStyle = [ ];
+            CurrWeather= [];
+            CurrStyle = [];
+			document.getElementById("facts").style.display = "none";		
+			document.getElementById("factsin").innerHTML= "";
             dressingpage.style.display="none";
             dressingpage.style.animation = "fadeout 1.5s";
             weatherpage.style.display="block";
@@ -170,8 +177,8 @@ var styleBut = document.getElementById("Style"),
 
         });
         document.getElementById("goBack3").addEventListener("click",function(){
-            CurrWeather= [ ];
-            CurrStyle = [ ];
+            CurrWeather= [];
+            CurrStyle = [];
             closetpage.style.display="none";
             closetpage.style.animation = "fadeout 1.5s";
             dressingpage.style.display="block";
@@ -181,20 +188,22 @@ var styleBut = document.getElementById("Style"),
 
         });
         document.getElementById("goToCloset").addEventListener("click",function(){
-             CurrWeather= [ ];
-             CurrStyle = [ ];
-                
+             CurrWeather= [];
+             CurrStyle = [];   
             dressingpage.style.display="none";
             dressingpage.style.animation = "fadeout 1.5s";
             closetpage.style.display="block";
             closetpage.style.animation = "fadein 1.5s";
             });
-            
+       
+
+//loading the facts
+  
            
-/*Closing the facts div*/
+//Closing the facts div//
 document.getElementById("closeFacts").addEventListener("click",function(){
     document.getElementById("facts").style.display = "none";
-})
+});
 
 
 

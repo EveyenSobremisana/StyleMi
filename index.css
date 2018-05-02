@@ -48,11 +48,26 @@ p:hover{
     margin: auto;
 }
 .aboutboxes{
-    width: 70%;
+    width: 55%;
+	height: 200px;
     position: absolute;
-    left: 80px;
+    left: 135px;
     top: 270px;
-    display: none;
+	padding: 20px;
+
+}
+#aboutUsBox, #aboutAppBox{
+	background-color: #bdd4e7;
+	width 200px;
+	height:250px;
+	border-radius: 20px;
+	display: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+	font-size: 1.1em;
+	overflow-y: auto;
+
 }
 #logotext{
             width:80%;
@@ -61,12 +76,12 @@ p:hover{
             left: 100px;
         }
 .btn {
-    cursor: pointer;
+   cursor: pointer;
 width: 150px;
 background: #AA767c;
 border-radius: 28px;
 font-family: 'Josefin Sans', sans-serif;
-font-weight: 300;
+font-weight: 400;
 color: #ffffff;
 font-size: 1em;
 padding: 10px 20px 10px 20px;
@@ -95,17 +110,17 @@ text-decoration: none;
     display: none;
     padding: 15px;
     width: 80%;
-    height:500px;
+    height:470px;
     background-color: rgba(189,212,231,0.9);
     position: absolute;
-    left:40px;
+    left:75px;
     top: 40px;
 }
 #helpTitle{
 font-family: 'Josefin Sans', sans-serif;
 color: black;
 font-size: 2em;
-    text-align: center;
+   text-align: center;
 }
 #helpSteps{
 font-family: 'Josefin Sans', sans-serif;
@@ -115,9 +130,12 @@ font-size: 1.2em;
 .closeBut{
     width: 10%;
     position: absolute;
+	 top: 0;
+    right: 2%;
+
     
 }
-#CloseBut, #closeFacts{
+#CloseBut, #closeFacts, #aboutClose{
     top: -3%;
     right: -3%;
 }
@@ -201,9 +219,13 @@ font-size: 1.2em;
               bottom: 5px;
               right: 155px; 
           }
+		 #aboutboxes{
+              width: auto;
+          }
        .aboutboxes{
-              width: 90%;
-              left: 20px;
+              width: 70%;
+              left: 30px;
+		   top:230px;
               
           }
     #helpDiv{
@@ -529,14 +551,16 @@ bottom: 0px;}
     right: 0px;
     bottom: 0px;
     margin: auto;
-    background-color: antiquewhite;
+    background-color:rgba(170,118,124,0.6);
     z-index: 5;
     display: none;
+	font-size: 1em;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #factInfo{
-    width: 14%;
+    width: 10%;
     position: absolute;
-    right: 70px;
+    right: 75px;
     bottom: 13px;
 }
 
@@ -549,7 +573,17 @@ bottom: 0px;}
     background-position: center;
     background-repeat: no-repeat; 
 }
-
+#factsin{
+	width: 200px;
+	height: 250px;
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+	overflow-y: auto;
+}
 
 /*closetpage*/
 #closetpage {
@@ -567,7 +601,7 @@ bottom: 0px;}
     top: -30px;
     left: 0px;
     padding: 10px;
-    overflow: auto;
+    overflow-y: auto;
 }
 .saved{
     position: relative;
@@ -587,7 +621,31 @@ bottom: 0px;}
     top: 10px;
     background-repeat: no-repeat;
     display: inline-block;
-    
+}
+#chooseDiv{
+	position:absolute;
+	width: 53%;
+	height: 50px;
+	z-index: 5;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	background-color:rgba(255,255,255,0.4);
+	font-size: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+	padding: 20px;
+	display: none;
+}
+#view, #delete{
+	font-size: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+	height: 30px;
+	width: 90px;
+	border-radius: 50px;
+	text-align: center;
+	padding: 1px;
 }
 
 /*finalLook*/
@@ -599,11 +657,11 @@ bottom: 0px;}
      position: relative;
 }
 #finaldress{
-    width: 70%;
-    height: 416px;
+    width: 71.4%;
+    height: 419px;
     position:absolute;
-    top: -9.7px;
-    left: 53px;
+    top: -12px;
+    left: 50px;
     background-position: center;
     background-repeat: no-repeat; 
 }
@@ -611,8 +669,7 @@ bottom: 0px;}
     position: absolute;
     top: 40px;
     left: 15px;
-    
-        font-size: 2rem;
+    font-size: 2rem;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
