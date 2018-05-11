@@ -5,6 +5,7 @@ $(document).ready(function(){
 	console.log("ready");
 	$.getJSON("styleMi.json", function(factsa) {
 		$("#factInfo").click(function(){
+			
 				if (gender[0] == "femaleGen"){
 					if(CurrWeather[0]== "sunny"){
 						
@@ -64,7 +65,7 @@ $(document).ready(function(){
 							}
 						}else if (CurrStyle[0] == "fancy"){
 							for ( var i = 0; i < factsa.length; i++){
-								if (factsa[i].Style == "CloudyFancyG"){
+								if (factsa[i].Style == "RainyFancyG"){
 									document.getElementById("factsin").innerHTML = "<h3>Dress:</h3> "+factsa[i].Dress;
 								}
 							}
@@ -79,19 +80,20 @@ $(document).ready(function(){
 							}
 						}else if (CurrStyle[0] == "business"){
 							for ( var i = 0; i < factsa.length; i++){
-								if (factsa[i].Style == "RainyBusinessG"){
+								if (factsa[i].Style == "SnowyBusinessG"){
 									document.getElementById("factsin").innerHTML = "<h3>Top:</h3> "+factsa[i].Top+"<br/><br/> <h3>Bottom:</h3>" +factsa[i].Bottom;
 								}
 							}
 						}else if (CurrStyle[0] == "fancy"){
 							for ( var i = 0; i < factsa.length; i++){
-								if (factsa[i].Style == "CloudyFancyG"){
+								if (factsa[i].Style == "SnowyFancyG"){
 									document.getElementById("factsin").innerHTML = "<h3>Dress:</h3> "+factsa[i].Dress;
 								}
 							}
 						}
 					}
-				}else if ( gender [i] == "maleGen"){
+				}else if ( gender [0] == "maleGen"){
+	
 					if(CurrWeather[0]== "sunny"){
 						
 						if(CurrStyle[0] == "casual"){
@@ -150,7 +152,7 @@ $(document).ready(function(){
 							}
 						}else if (CurrStyle[0] == "fancy"){
 							for ( var i = 0; i < factsa.length; i++){
-								if (factsa[i].Style == "CloudyFancyG"){
+								if (factsa[i].Style == "RainyFancyG"){
 									document.getElementById("factsin").innerHTML = "<h3>Top:</h3> "+factsa[i].Top+"<br/><br/> <h3>Bottom:</h3>" +factsa[i].Bottom;
 								}
 							}
@@ -165,19 +167,20 @@ $(document).ready(function(){
 							}
 						}else if (CurrStyle[0] == "business"){
 							for ( var i = 0; i < factsa.length; i++){
-								if (factsa[i].Style == "RainyBusinessB"){
+								if (factsa[i].Style == "SnowyBusinessB"){
 									document.getElementById("factsin").innerHTML = "<h3>Top:</h3> "+factsa[i].Top+"<br/><br/> <h3>Bottom:</h3>" +factsa[i].Bottom;
 								}
 							}
 						}else if (CurrStyle[0] == "fancy"){
 							for ( var i = 0; i < factsa.length; i++){
-								if (factsa[i].Style == "CloudyFancyB"){
+								if (factsa[i].Style == "SnowyFancyB"){
 									document.getElementById("factsin").innerHTML = "<h3>Top:</h3> "+factsa[i].Top+"<br/><br/> <h3>Bottom:</h3>" +factsa[i].Bottom;
 								}
 							}
 						}
 					}
 				}
+			$("#showFacts").hide();
 		});
 	});
 });

@@ -72,7 +72,7 @@ p:hover{
 #logotext{
             width:80%;
             position: absolute;
-            top: 0px;
+            top: 30px;
             left: 100px;
         }
 .btn {
@@ -648,6 +648,25 @@ bottom: 0px;}
 	padding: 1px;
 }
 
+#showFacts{
+	width: 25%;
+	position: absolute;
+	right: 45px;
+	bottom: -60px;
+	animation-name: factspop;
+	animation-delay: .1s;
+	animation-duration: .5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes factspop{
+	0%{ bottom: -60px;}
+	100%{
+		bottom: 55px;
+	}
+}
+
 /*finalLook*/
 #finallookpage{
     width: 375px;
@@ -673,5 +692,13 @@ bottom: 0px;}
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
+}
+#result{
+	width: 350px;
+	left: 20px;
+	bottom: 20px;
+	position: absolute;
+	font-size: 1.1em;
+    font-family: 'Josefin Sans', sans-serif;
 }
     

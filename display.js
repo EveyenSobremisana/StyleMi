@@ -4,7 +4,7 @@ var helpBut = document.getElementById("helpBut"),
 
 helpBut.addEventListener("click",function(){
         helpDiv.style.display = "block";
-})
+});
 
 function closeDiv(){
     helpDiv.style.display = "none";
@@ -29,7 +29,7 @@ var sunnyH = document.getElementById("sunnyHover"),
     box4 = document.getElementById("box4");
 
 var CurrWeather = [ ];
-
+var closetArray = [ ];
 
 
 //Weatherpage
@@ -162,7 +162,7 @@ factBut.addEventListener("click",function(){
 var dress = document.getElementById("dress"),
     changeLeft = document.getElementById("changeLeft"),
     changeRight = document.getElementById("changeRight"),
-     finalpage = document.getElementById("finallookpage"),
+    finalpage = document.getElementById("finallookpage"),
     finaldress = document.getElementById("finaldress");
 
 function StyleMi() {
@@ -459,57 +459,85 @@ function StyleMi() {
                }
            }
     }
+	}
 }
-}
+var selected = 0;
+ document.getElementById("goToCloset").addEventListener("click",function(){
+             CurrWeather= [];
+             CurrStyle = [];   
+            dressingpage.style.display="none";
+            dressingpage.style.animation = "fadeout 1.5s";
+            closetpage.style.display="block";
+            closetpage.style.animation = "fadein 1.5s";
+	 
+	 		loadCloset();
+	 
+ });
 
+function loadCloset() {
+	for(i=0;i<closetArray.length;i++) {
+		
+		var Cdiv = document.createElement("div");
+    	Cdiv.className="saved";
+    	Cdiv.id = i;
+		
+		newImage = document.createElement("div");
+    	newImage.className="imgsaved";
+    	newImage.style.backgroundImage = closetArray[i].astyle;
+    	newImage.id = box+"i";
+		
+		Cdiv.appendChild(newImage);
+    	display.appendChild(Cdiv);
+		
+		Cdiv.addEventListener("click", function(){
+			document.getElementById("chooseDiv").style.display = "block";
+			selected = this.id;
+		});
+	}
+}
 var addCloset = document.getElementById("addCloset"),
     display = document.getElementById("closetSaved"),
-   
 
 box = 0;
+
 function saveClothes (){
-    
-    dressSaved = dress.style.backgroundImage;
-
-    box ++;
-    var Cdiv = document.createElement("div");
-      Cdiv.className="saved";
-      Cdiv.id = box;
-    newImage = document.createElement("div");
-    newImage.className="imgsaved";
-    newImage.style.backgroundImage = dressSaved;
-    newImage.id = box+"i";
-    
-    // i to make it different from the boxes
-
-  
-    function CdivDel(id){
-        document.getElementById(id).remove();
-    }
-    
-    Cdiv.addEventListener("click", function(){
-		//document.getElementById("result").innerHTML = "You have chosen "+ parseInt(CurrWeather[i])+ " and "+parseInt(CurrStyle[i]);
-        console.log("clicked", this.id);
-        finalpage.style.backgroundImage = dressingpage.style.backgroundImage; 
-        finaldress.style.backgroundImage = document.getElementById(this.id+"i").style.backgroundImage;
-		
-        
-        
-        //after you click Cdiv, you will redirected to the Final Look Page
-            closetpage.style.display="none";
-            closetpage.style.animation = "fadeout 1.5s";
-            finalpage.style.display="block";
-            finalpage.style.animation = "fadein 1.5s";
-            
-   })
-    
-    Cdiv.appendChild(newImage);
-    display.appendChild(Cdiv);
-
+	
+	var obj = {
+		currentstyle: CurrStyle[0],
+		currentweather: CurrWeather[0],
+		astyle: dress.style.backgroundImage
+	}
+	closetArray.push(obj);
+	
 }
-
+	
+	document.getElementById("delete").addEventListener("click",function(){
+		del();
+	});
+	document.getElementById("view").addEventListener("click",function(){
+		view();
+	});
+	
+	function del() {
+		closetArray.splice(selected, 1);
+		document.getElementById("chooseDiv").style.display = "none";
+		display.innerHTML = "";
+		loadCloset();
+	}
+	
+	function view() {
+		//after you click Cdiv, you will redirected to the Final Look Page
+		closetpage.style.display="none";
+		closetpage.style.animation = "fadeout 1.5s";
+		finalpage.style.display="block";
+		finalpage.style.animation = "fadein 1.5s";
+		
+		finalpage.style.backgroundImage = dressingpage.style.backgroundImage; 
+		finaldress.style.backgroundImage = closetArray[selected].astyle;
+		
+		document.getElementById("result").innerHTML = "Hi "+document.getElementById("name").value+" you chose: " + closetArray[selected].currentweather+ " and "+ closetArray[selected].currentstyle +" for your style!";
+	}
+	
 addCloset.addEventListener("click",function(){
     saveClothes();
-
-})
-
+});

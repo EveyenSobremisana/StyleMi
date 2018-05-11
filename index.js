@@ -187,14 +187,7 @@ var styleBut = document.getElementById("Style"),
             
 
         });
-        document.getElementById("goToCloset").addEventListener("click",function(){
-             CurrWeather= [];
-             CurrStyle = [];   
-            dressingpage.style.display="none";
-            dressingpage.style.animation = "fadeout 1.5s";
-            closetpage.style.display="block";
-            closetpage.style.animation = "fadein 1.5s";
-            });
+       
        
 
 //loading the facts
