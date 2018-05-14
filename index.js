@@ -1,8 +1,12 @@
 //Showing about us and about app//
 document.getElementById("AboutUs").addEventListener("click",function(){
+	sfx1.play();
+	sfx1.volume = 0.5;
     document.getElementById("aboutUsBox").style.display ="block"; 
 });
 document.getElementById("AboutApp").addEventListener("click",function(){
+	sfx1.play();
+	sfx1.volume = 0.5;
     document.getElementById("aboutAppBox").style.display ="block"; 
 });
 document.getElementById("aboutUsBox").addEventListener("click",function(){
@@ -97,31 +101,29 @@ var styleBut = document.getElementById("Style"),
 
         //settings button goes back to form page
         document.getElementById("home1").addEventListener("click",function(){
+			 gender= [];
             secondpage.style.display="none";
             secondpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
             firstpage.style.animation = "fadein 1.5s";
-            gender= [];
-            CurrWeather= [];
-            CurrStyle = [];
+
         });
         document.getElementById("home2").addEventListener("click",function(){
+			 gender= [];
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
             firstpage.style.animation = "fadein 1.5s";
-            gender= [];
-            CurrWeather= [];
-            CurrStyle = [];
+
         });
         document.getElementById("home3").addEventListener("click",function(){
+			 gender= [];
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
             firstpage.style.animation = "fadein 1.5s";
-            gender= [];
-            CurrWeather= [];
-            CurrStyle = [];
+
+
         });
         document.getElementById("home4").addEventListener("click",function(){
             //inefficient way//
@@ -133,6 +135,7 @@ var styleBut = document.getElementById("Style"),
             document.getElementById("closetpage").style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
             firstpage.style.animation = "fadein 1.5s";
+			document.getElementById("dress").style.backgroundImage = "";
             gender= [];
             CurrWeather= [];
             CurrStyle = [];
@@ -142,8 +145,7 @@ var styleBut = document.getElementById("Style"),
 // BACK BUTTON 
 
         document.getElementById("goBack").addEventListener("click",function(){
-            CurrWeather= [];
-            CurrStyle = [];
+         
 			weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             secondpage.style.display="block";
@@ -177,8 +179,9 @@ var styleBut = document.getElementById("Style"),
 
         });
         document.getElementById("goBack3").addEventListener("click",function(){
-            CurrWeather= [];
-            CurrStyle = [];
+//            CurrWeather= [];
+//            CurrStyle = [];
+			display.innerHTML = "";
             closetpage.style.display="none";
             closetpage.style.animation = "fadeout 1.5s";
             dressingpage.style.display="block";
@@ -189,14 +192,21 @@ var styleBut = document.getElementById("Style"),
         });
        
        
+//audio
 
-//loading the facts
-  
+var sfx1 = new Audio ("sfx1.mp3"),
+	sfx2 = new Audio ("sfx2.mp3"),
+	sfx3 = new Audio ("sfx3.mp3"),
+	sfx4 = new Audio ("sfx4.mp3");
+
+document.getElementById("helpBut").addEventListener("click",function(){
+	sfx1.play();
+	sfx1.volume = 0.5;
+})
+
            
-//Closing the facts div//
-document.getElementById("closeFacts").addEventListener("click",function(){
-    document.getElementById("facts").style.display = "none";
-});
+
+
 
 
 

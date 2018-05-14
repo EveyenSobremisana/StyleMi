@@ -1,8 +1,24 @@
+//facts
+var factBut = document.getElementById("factInfo"),
+    factDiv = document.getElementById("facts");
+
+factBut.addEventListener("click",function(){
+	sfx1.play();
+	sfx1.volume = 0.5;
+    factDiv.style.display = "block";
+})
+
+//Closing the facts div//
+document.getElementById("closeFacts").addEventListener("click",function(){
+    document.getElementById("facts").style.display = "none";
+});
+
+//loading the facts
+  
 var FactsArray= [];
- var thekey = "Style";
+var thekey = "Style";
 
 $(document).ready(function(){
-	console.log("ready");
 	$.getJSON("styleMi.json", function(factsa) {
 		$("#factInfo").click(function(){
 			

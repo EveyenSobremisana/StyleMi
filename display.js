@@ -147,18 +147,9 @@ var CurrStyle = [ ];
             StyleMi();
         });
 
-//facts
-var factBut = document.getElementById("factInfo"),
-    factDiv = document.getElementById("facts");
-
-factBut.addEventListener("click",function(){
-    factDiv.style.display = "block";
-})
 
  
-
-/****************FUNCTION*******************/
-
+// generating selection of clothes
 var dress = document.getElementById("dress"),
     changeLeft = document.getElementById("changeLeft"),
     changeRight = document.getElementById("changeRight"),
@@ -392,10 +383,7 @@ function StyleMi() {
                                                dress.style.backgroundImage= "url(SVG/outfits/male/rcb2.svg)";});
                    changeLeft.addEventListener("click",function(){
                                                dress.style.backgroundImage= "url(SVG/outfits/male/rcb.svg)";});
-                   
-                   //putting the facts in the placeholder
-//                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/brcU.svg)";
-//                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/brcD.svg)";    
+  
              }
                else if (CurrStyle[i] == "business"){
                    dress.style.backgroundImage= "url(SVG/outfits/male/rbb.svg)";
@@ -417,9 +405,7 @@ function StyleMi() {
                    changeLeft.addEventListener("click",function(){
                                                dress.style.backgroundImage= "url(SVG/outfits/male/rfb.svg)";});
                    
-                   //putting the facts in the placeholder
-//                    document.getElementById("facts2").style.backgroundImage = "url(SVG/facts/brfU.svg)";
-//                    document.getElementById("facts3").style.backgroundImage = "url(SVG/facts/brfD.svg)";
+                   
                }
            
        }
@@ -462,9 +448,7 @@ function StyleMi() {
 	}
 }
 var selected = 0;
- document.getElementById("goToCloset").addEventListener("click",function(){
-             CurrWeather= [];
-             CurrStyle = [];   
+ document.getElementById("goToCloset").addEventListener("click",function(){ 
             dressingpage.style.display="none";
             dressingpage.style.animation = "fadeout 1.5s";
             closetpage.style.display="block";
@@ -508,6 +492,7 @@ function saveClothes (){
 		astyle: dress.style.backgroundImage
 	}
 	closetArray.push(obj);
+	console.log(closetArray);
 	
 }
 	
@@ -519,13 +504,20 @@ function saveClothes (){
 	});
 	
 	function del() {
+		sfx3.play();
+		sfx3.volume = 0.1;
 		closetArray.splice(selected, 1);
 		document.getElementById("chooseDiv").style.display = "none";
 		display.innerHTML = "";
 		loadCloset();
+		console.log(closetArray);
 	}
 	
 	function view() {
+		
+		sfx4.play();
+		sfx4.volume = 0.5;
+		
 		//after you click Cdiv, you will redirected to the Final Look Page
 		closetpage.style.display="none";
 		closetpage.style.animation = "fadeout 1.5s";
@@ -534,10 +526,21 @@ function saveClothes (){
 		
 		finalpage.style.backgroundImage = dressingpage.style.backgroundImage; 
 		finaldress.style.backgroundImage = closetArray[selected].astyle;
+		document.getElementById("chooseDiv").style.display = "none";
 		
 		document.getElementById("result").innerHTML = "Hi "+document.getElementById("name").value+" you chose: " + closetArray[selected].currentweather+ " and "+ closetArray[selected].currentstyle +" for your style!";
 	}
 	
 addCloset.addEventListener("click",function(){
+	sfx2.play();
+	sfx2.volume = 0.1;
     saveClothes();
 });
+
+// going back to the closet from the final look page//
+document.getElementById("finalBack").addEventListener("click",function(){
+			document.getElementById("finallookpage").style.display="none";
+            document.getElementById("finallookpage").style.animation = "fadeout 1.5s";
+            closetpage.style.display="block";
+            closetpage.style.animation = "fadein 1.5s";
+})

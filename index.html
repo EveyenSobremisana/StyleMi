@@ -27,11 +27,18 @@
 				How to use Style Mi
 			</div>
 			<ol id="helpSteps">
-				<li>To get started, Fill out the form, and press <b>start</b> to begin.</li><br/>
-				<li>Click on the <b> Create Look </b> icon to choose the ideal weather and style for your occasion. </li><br/>
-				<li>Once you selected your prefered weather and style, your outfit will appear on your avatar. You can then click the <b> arrows </b> to the right and left to see variations. </li> <br/>
-				<li>Once you've completed your look, click on <b>Add to Closet</b> to save it or click on the <b> Reset </b> button to return to the create look options.</li> <br/>
-				<li>Click on the <b>closet</b> icon to view passed saved looks or delete previously saved looks.</li>
+				<li>To get started click <b> Begin </b>and fill out the form. Press <b>start</b> to be directed to the Avatar.</li><br/>
+				
+				<li>Click on the <b> Change Look </b> icon to choose the ideal weather and style for your occasion. </li><br/>
+				
+				<li>Once you selected your prefered weather and style, your outfit will appear on your avatar. You can then click the <b> arrows </b> to the right and left to see variations. Click on the <b>Information Icon</b> to display facts.</li> <br/>
+				
+				<li>Once you've completed your look, click on <b>Add to Closet</b> button in the top right of your screen to save it</li> <br/>
+				
+				<li>Click on the <b>closet</b> icon to view or to delete your saved outfit. If you click on <b>View Mi</b>, you will be redirected to your final look. </li> <br/>
+				<li>Click on the <b>back button</b> to return to the close! </li> <br/>
+				<li> <b>Enjoy Style Mi ! </b></li>
+				
 			</ol>
 		</div>
 		
@@ -50,8 +57,8 @@
 		
 		</div>
 <!--		end of landing page-->
-<!--		start of first page - name and gender form-->
 		
+<!--		start of first page - name and gender form-->
 		<div id="firstpage">
 			<img id="logo" src="SVG/logo.svg"/>
 			
@@ -65,10 +72,9 @@
             <button id="start" class="btn"> Start</button>
 		
 		</div>
-		
 <!--		end of first page-->
-<!--		start of second page-->		
 		
+<!--		start of second page-->		
 		<div id="secondpage">
 			<div class="top">
 				<div id="nameDiv"></div>
@@ -86,10 +92,9 @@
 				<img src="SVG/Closet.svg" id="Closet" class="choices"/>
 			</div>
 		</div>
-		
 <!--		end of second page-->
-<!--		start of weather page: choose what kind of weather-->	
 		
+<!--		start of weather page: choose what kind of weather-->	
 		<div id="weatherpage">
 			<div class="top">
 				<div id="weathertitle"> What's the weather?</div>
@@ -127,9 +132,9 @@
 			</div>
 		</div>
 <!--		end of weather page-->
-<!--		start of style page: choose what kind of style-->
 		
 		
+<!--		start of style page: choose what kind of style-->	
 		<div id="stylepage">
 			<div class="top">
 				<div id="styletitle"> Select your style:</div>
@@ -159,8 +164,8 @@
 			</div>
 		</div>
 <!--		end of style page-->
-<!--		start of dress page: generates a selection of clothes and facts based on the choses weather and style-->
 		
+<!--		start of dress page: generates a selection of clothes and facts based on the choses weather and style-->
 		<div id="dressingpage">
 			<div class="top">
 				<button id="addCloset" class="btn"> Add to Closet</button>
@@ -192,8 +197,8 @@
 			</div>
 		</div>
 <!--		end of dress page-->
+
 <!--		start of closet page: can see the saved photo-->
-		
 		<div id="closetpage">
 			<div class="top">
 				<div class="setting">
@@ -215,8 +220,8 @@
 			</div>
 		</div>
 <!--		end of closet page-->
-<!--		start of final page: can see the final outfit -->
 		
+<!--		start of final page: can see the final outfit -->
 		<div id="finallookpage">
 			<div class="top"> <div id="final"> Here is your final look!</div>
 			</div>
@@ -224,15 +229,16 @@
 				<div id="finaldress"></div>
 			</div>
 			<div class="bottom">
-				
+				<div class="backDiv">
+					<img src="SVG/back.svg" id="finalBack"/>
+				</div>
 				<div id="result"></div>
 			</div>
 		</div>
-		
+<!--		end of final page-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="index.js"></script>
 		<script src="display.js"></script>
 		<script src="facts.js"></script>
-	
 	</body>
 </html>

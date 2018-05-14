@@ -8,10 +8,8 @@ body{
     width: 100vw;
     height: 667px;
     margin: 0 auto;
-/*  background-color: #E2DCDE;*/
   }    
 #content{
-/*    background-color: antiquewhite;*/
         position: relative;
         top: 0px;
         left: 0px;
@@ -115,6 +113,8 @@ text-decoration: none;
     position: absolute;
     left:75px;
     top: 40px;
+	border-radius: 20px;
+	overflow-y: auto;
 }
 #helpTitle{
 font-family: 'Josefin Sans', sans-serif;
@@ -130,15 +130,11 @@ font-size: 1.2em;
 .closeBut{
     width: 10%;
     position: absolute;
-	 top: 0;
-    right: 2%;
+	top: 1%;
+	right: 2.2%;
+}
 
-    
-}
-#CloseBut, #closeFacts, #aboutClose{
-    top: -3%;
-    right: -3%;
-}
+
 
       /*MEDIA QUERIES*/
       /* for 980px or less */
@@ -556,6 +552,7 @@ bottom: 0px;}
     display: none;
 	font-size: 1em;
     font-family: 'Josefin Sans', sans-serif;
+	border-radius: 20px;
 }
 #factInfo{
     width: 10%;
@@ -563,7 +560,10 @@ bottom: 0px;}
     right: 75px;
     bottom: 13px;
 }
-
+#closeFacts{
+    top: -2%;
+    right: -1.2%;
+}
 #dress{
     width: 70%;
     height: 416px;
@@ -637,6 +637,7 @@ bottom: 0px;}
     font-family: 'Josefin Sans', sans-serif;
 	padding: 20px;
 	display: none;
+	border-radius: 15px;
 }
 #view, #delete{
 	font-size: 1em;
@@ -647,7 +648,6 @@ bottom: 0px;}
 	text-align: center;
 	padding: 1px;
 }
-
 #showFacts{
 	width: 25%;
 	position: absolute;
@@ -695,10 +695,23 @@ bottom: 0px;}
 }
 #result{
 	width: 350px;
-	left: 20px;
+	height: 50px;
+	left: 13px;
 	bottom: 20px;
 	position: absolute;
 	font-size: 1.1em;
     font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	background-color:rgba(170,118,124,0.6);
+	border-radius: 15px;
+	padding-top: 16px;
+	margin: auto;
+}
+#finalBack{
+	width: 70%;
+    height: 40px;
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
 }
     
