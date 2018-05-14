@@ -516,7 +516,7 @@ function saveClothes (){
 	function view() {
 		
 		sfx4.play();
-		sfx4.volume = 0.5;
+		sfx4.volume = 0.3;
 		
 		//after you click Cdiv, you will redirected to the Final Look Page
 		closetpage.style.display="none";

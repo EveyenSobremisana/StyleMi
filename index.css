@@ -547,12 +547,17 @@ bottom: 0px;}
     right: 0px;
     bottom: 0px;
     margin: auto;
-    background-color:rgba(170,118,124,0.6);
+    background-color:rgba(170,118,124,0.8);
     z-index: 5;
     display: none;
 	font-size: 1em;
     font-family: 'Josefin Sans', sans-serif;
 	border-radius: 20px;
+	
+}
+
+h3{
+	color: black;
 }
 #factInfo{
     width: 10%;
@@ -574,6 +579,7 @@ bottom: 0px;}
     background-repeat: no-repeat; 
 }
 #factsin{
+	color: white;
 	width: 200px;
 	height: 250px;
 	position: absolute;
