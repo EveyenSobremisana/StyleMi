@@ -49,8 +49,8 @@ p:hover{
     width: 55%;
 	height: 200px;
     position: absolute;
-    left: 135px;
-    top: 270px;
+    left: 15%;
+    top: 45%;
 	padding: 20px;
 
 }
@@ -71,7 +71,7 @@ p:hover{
             width:80%;
             position: absolute;
             top: 30px;
-            left: 100px;
+            left: 50px;
         }
 .btn {
    cursor: pointer;
@@ -111,8 +111,8 @@ text-decoration: none;
     height:470px;
     background-color: rgba(189,212,231,0.9);
     position: absolute;
-    left:75px;
-    top: 40px;
+    left:7%;
+    top: 12%;
 	border-radius: 20px;
 	overflow-y: auto;
 }
@@ -123,9 +123,11 @@ font-size: 2em;
    text-align: center;
 }
 #helpSteps{
-font-family: 'Josefin Sans', sans-serif;
-color: black;
-font-size: 1.2em;
+	font-family: 'Josefin Sans', sans-serif;
+	color: black;
+	font-size: 1.2em;
+	position: absolute;
+	left: -10px;
 }
 .closeBut{
     width: 10%;
@@ -141,94 +143,86 @@ font-size: 1.2em;
       @media screen and (max-width: 667px) {
 
         * { font-size: 1.0rem; }
-        #logotext{
-            top: 0px;
+		  #logotext{
+            top: 30px;
             left: 60px;
             width: 80%;
-          }
-       
-          #pagewrap {
+		  }
+		  #pagewrap {
           width: 94%;
-        }
-        #content {
-          width: 65%;  
-        }
-        #next{
-              width:170px;
+		  }
+		  #content {
+          width: 65%;
+		  }
+		  #next{
+			width:170px;
             height: 40px;
-              font-size: 1.5rem;
-          }
-          #helpBut{
+			font-size: 1.5rem;
+		  }
+		  #helpBut{
               bottom: 9px;
               right: 220px; 
           }
-        #aboutboxes{
+		  #aboutboxes{
               width: auto;
           }
-       
-      }
+}
 
       /* for 666px or less */
       @media screen and (max-width: 666px) and (min-width:476px){
          #logotext{
-              top: 0px;
+			 top: 30px;
              left: 60px;
-              width: 80%;
+			 width: 75%;
           }
-        
-          #content {
+		  #content {
           width: auto;
           float: none;
-     
-        }
-        #next{
+		  }
+		  #next{
               width:170px;
               height: 40px;
               font-size: 1rem;
-          }
-        #aboutboxes{
+		  }
+		  #aboutboxes{
               width: auto;
           }
           #helpBut{
               bottom: 5px;
-              right: 210px; 
-          }
+              right: 210px
+		  }
 }
 
       /* for 475px or less */
       @media screen and (max-width: 475px) and (min-width: 100px) {
-
-        
-       #content {
-          width: auto;
-        }
-       #logotext{
-           top: 30px;
-           left: 30px;
-            width: 90%;
-          }
-       #next{
-           width:130px;
+		  #content {
+			  width: auto;
+		  }
+		  #logotext{
+			  top: 5%;
+			  left: 4%;
+			  width: 90%;
+		  }
+		  #next{
+			  width:130px;
               font-size:.9rem;
           }
-        #helpBut{
+		  #helpBut{
               bottom: 5px;
               right: 155px; 
           }
-		 #aboutboxes{
+		  #aboutboxes{
               width: auto;
-          }
-       .aboutboxes{
+		  }
+		  .aboutboxes{
               width: 70%;
               left: 30px;
-		   top:230px;
-              
-          }
-    #helpDiv{
-    left:22px;
+			  top:230px;
+		  }
+		  #helpDiv{
+			  left:22px;
+		  }
 }
-          
-  }
 
 /*firstpage*/
 #firstpage {

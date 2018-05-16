@@ -48,7 +48,7 @@ var gender = [ ];
             formNotifs.style.display="none";
             CurrWeather= [ ];
             CurrStyle = [ ];
-            console.log(gender);
+            console.log(gender); 
             }else if(male.checked){
               gender.push("maleGen");
             firstpage.style.display="none";
@@ -101,7 +101,10 @@ var styleBut = document.getElementById("Style"),
 
         //settings button goes back to form page
         document.getElementById("home1").addEventListener("click",function(){
-			 gender= [];
+			gender= [];
+			CurrWeather= [];
+            CurrStyle = [];
+			display.innerHTML = "";
             secondpage.style.display="none";
             secondpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
@@ -109,7 +112,10 @@ var styleBut = document.getElementById("Style"),
 
         });
         document.getElementById("home2").addEventListener("click",function(){
-			 gender= [];
+			gender= [];
+			CurrWeather= [];
+            CurrStyle = [];
+			display.innerHTML = "";
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
@@ -117,7 +123,10 @@ var styleBut = document.getElementById("Style"),
 
         });
         document.getElementById("home3").addEventListener("click",function(){
-			 gender= [];
+			gender= [];
+			CurrWeather= [];
+            CurrStyle = [];
+			display.innerHTML = "";
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
@@ -129,7 +138,7 @@ var styleBut = document.getElementById("Style"),
             //inefficient way//
             closetB.style.zIndex = 0;
             document.getElementById("closetnotifs").style.display = "none";
-            
+			display.innerHTML = "";
             
             document.getElementById("closetpage").style.display="none";
             document.getElementById("closetpage").style.animation = "fadeout 1.5s";
@@ -140,6 +149,7 @@ var styleBut = document.getElementById("Style"),
             CurrWeather= [];
             CurrStyle = [];
         });
+
 
 
 // BACK BUTTON 

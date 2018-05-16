@@ -487,6 +487,7 @@ box = 0;
 function saveClothes (){
 	
 	var obj = {
+		currentgender:gender[0],
 		currentstyle: CurrStyle[0],
 		currentweather: CurrWeather[0],
 		astyle: dress.style.backgroundImage
@@ -524,7 +525,12 @@ function saveClothes (){
 		finalpage.style.display="block";
 		finalpage.style.animation = "fadein 1.5s";
 		
-		finalpage.style.backgroundImage = dressingpage.style.backgroundImage; 
+		if(closetArray[selected].currentgender == "femaleGen"){
+		   finalpage.style.backgroundImage = "url(SVG/bg1.svg)";
+		   } else {
+			finalpage.style.backgroundImage = "url(SVG/bg2.svg)";
+		}
+
 		finaldress.style.backgroundImage = closetArray[selected].astyle;
 		document.getElementById("chooseDiv").style.display = "none";
 		
@@ -533,7 +539,7 @@ function saveClothes (){
 	
 addCloset.addEventListener("click",function(){
 	sfx2.play();
-	sfx2.volume = 0.1;
+	sfx2.volume = 0.2;
     saveClothes();
 });
 
