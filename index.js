@@ -135,7 +135,7 @@ var styleBut = document.getElementById("Style"),
             //inefficient way//
             closetB.style.zIndex = 0;
             document.getElementById("closetnotifs").style.display = "none";
-            
+            display.innerHTML = "";
             document.getElementById("closetpage").style.display="none";
             document.getElementById("closetpage").style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
