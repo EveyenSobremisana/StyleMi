@@ -104,7 +104,6 @@ var styleBut = document.getElementById("Style"),
 			gender= [];
 			CurrWeather= [];
             CurrStyle = [];
-			display.innerHTML = "";
             secondpage.style.display="none";
             secondpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
@@ -115,7 +114,6 @@ var styleBut = document.getElementById("Style"),
 			gender= [];
 			CurrWeather= [];
             CurrStyle = [];
-			display.innerHTML = "";
             weatherpage.style.display="none";
             weatherpage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
@@ -126,7 +124,6 @@ var styleBut = document.getElementById("Style"),
 			gender= [];
 			CurrWeather= [];
             CurrStyle = [];
-			display.innerHTML = "";
             stylepage.style.display="none";
             stylepage.style.animation = "fadeout 1.5s";
             firstpage.style.display="block";
@@ -138,7 +135,6 @@ var styleBut = document.getElementById("Style"),
             //inefficient way//
             closetB.style.zIndex = 0;
             document.getElementById("closetnotifs").style.display = "none";
-			display.innerHTML = "";
             
             document.getElementById("closetpage").style.display="none";
             document.getElementById("closetpage").style.animation = "fadeout 1.5s";
@@ -146,8 +142,8 @@ var styleBut = document.getElementById("Style"),
             firstpage.style.animation = "fadein 1.5s";
 			document.getElementById("dress").style.backgroundImage = "";
             gender= [];
-            CurrWeather= [];
-            CurrStyle = [];
+//            CurrWeather= [];
+//            CurrStyle = [];
         });
 
 
