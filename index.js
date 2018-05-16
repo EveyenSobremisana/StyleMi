@@ -142,8 +142,8 @@ var styleBut = document.getElementById("Style"),
             firstpage.style.animation = "fadein 1.5s";
 			document.getElementById("dress").style.backgroundImage = "";
             gender= [];
-//            CurrWeather= [];
-//            CurrStyle = [];
+            CurrWeather= [];
+            CurrStyle = [];
         });
 
 
